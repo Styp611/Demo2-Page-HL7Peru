@@ -1,0 +1,1293 @@
+ 
+ .login-button {
+    margin-right: 14px;
+    padding: 10px 20px;
+    background-color: #24262b;
+    color: #ffffff;
+    cursor: pointer;
+    border: 1px solid #24262b;
+  
+    /* tamaño y color de borde */
+    border-radius: 8px;
+    /* redondear bordes */
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: inline-block;
+    font-weight: 520;
+    font-size: 12px;
+    text-decoration: none;
+    letter-spacing: 1.5px;
+    font-style: normal;
+  }
+  
+  .login-button:hover {
+    color: #24262b;
+    /* color de fuente hover */
+  }
+  
+  
+  .login-button::after {
+    content: "";
+    background: var(--blanco);
+    /* color de fondo hover */
+    position: absolute;
+    z-index: -1;
+    padding: 16px 20px;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: -100%;
+    right: 100%;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+  }
+  
+  .login-button:hover::after {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+  }
+
+ /* Estilos para la barra de navegación reducida */
+ .container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+
+  .fondo {
+    background: var(--rojo);
+    z-index: 99;
+    position: relative;
+  }
+
+  /* Estilos para la barra de navegación */
+  nav {
+    background-color: var(--white);
+
+
+    margin-bottom: 2px;
+  }
+
+  nav a {
+    color: #333c4e;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 0.2px;
+    font-style: normal;
+
+    margin: 1px 1px 1px 5px;
+    /* Agregar margen izquierdo de 10px entre botones */
+  }
+
+  nav a:hover {
+    color: rgb(6, 6, 6);
+
+
+
+  }
+
+  header {
+
+    background-color: white !important;
+    width: 100%;
+    padding: 4px;
+    margin: 0;
+    color: white;
+    text-align: center;
+
+
+  }
+
+
+
+
+
+  .header__logo-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0px 24px;
+
+
+  }
+
+
+
+  .redesid {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    margin-left: 110px;
+    font-size: 30px;
+    color: #fff;
+  }
+
+
+
+
+  .header__logo {
+    max-width: 85px;
+
+  }
+
+
+  .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* Agregar posición relativa */
+    z-index: 2;
+    /* Ajustar el z-index */
+    margin: 0px 15px;
+    /* Cambiar margen izquierdo a margen derecho */
+    margin-bottom: 9px;
+  }
+
+  .swiper {
+
+    height: 400px;
+  }
+
+
+
+  swiper-container {
+
+    width: 100%;
+    height: 100%;
+  }
+
+  swiper-slide {
+
+    text-align: center;
+    font-size: 12px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+
+
+  }
+
+  swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+
+  }
+
+
+
+
+
+
+
+
+  .overlay-button {
+    padding: 15px 30px;
+    background-color: var(--rojo);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+    width: 200px;
+    height: 60px;
+    border-radius: 12px;
+    white-space: nowrap;
+    /* Evita el salto de línea */
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .overlay-button:hover {
+    background-color: darkred;
+  }
+
+
+  ul {
+    margin: 15px 5px;
+    padding: 0;
+    list-style: none;
+    width: 600px;
+  }
+
+  li {
+    display: inline;
+
+    margin: 5px 5px;
+  }
+
+  /* Estilos para el menú desplegable */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    margin: 5px 10px;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top: auto;
+    /* Mover 10px hacia la parte inferior ESTE ES PRBLEMA DE CURSOR OCULTADO */
+    background-color: white;
+    /* Agregar fondo blanco */
+    border-radius: 1px;
+    white-space: nowrap;
+    /* Evita el salto de línea */
+    text-align: left;
+    border: 0.5px solid #7b808b;
+    /* Agregar línea de borde */
+    border-radius: 1px;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .dropdown-content a {
+    display: block;
+    color: black;
+    padding: 8px 22px;
+    text-decoration: none;
+  }
+
+  .dropdown-content a:hover {
+    background-color: rgb(224, 99, 99);
+    /* Cambiar el color de fondo al pasar el cursor */
+    color: white;
+    width: 100%;
+    /* Añadir ancho del 100% */
+    height: 100%;
+    /* Añadir alto del 100% */
+    margin: auto;
+  }
+
+  /* Estilos para el botón desplegable */
+  .dropbtn {
+    background-color: var(--blanco);
+    color: #333c4e;
+    padding: 2px 2px;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+  }
+
+
+
+
+  .search-li {
+    float: right;
+
+    /* Mover 8px hacia la parte inferior */
+
+  }
+
+  .search-box {
+    display: flex;
+    align-items: center;
+    padding: 0px 5px;
+  }
+
+  .search-box input {
+
+    margin-right: 15px;
+    /* Mover el texto del placeholder 15px hacia la derecha */
+    height: 27px;
+    /* Aumentar la altura a 30px */
+    width: 80px;
+    text-align: left;
+    /* Centrar el texto del input */
+  }
+
+  .search-box input::placeholder {
+    text-align: center;
+    /* Centrar el texto del placeholder */
+  }
+
+  .search-box button {
+
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #333c4e;
+    margin: 8px 2px 3px 2px;
+    /* Cambiar el color de la lupa a blanco */
+  }
+
+
+  /* Estilos para dispositivos con ancho máximo de 768px */
+  #introduction .introduction-image {
+    max-width: 100%;
+    height: auto;
+  }
+
+  #introduction {
+    padding: 25px;
+    margin: 25px;
+  }
+
+  .introduction-inner {
+    display: flex;
+    flex-wrap: wrap;
+    /* Permite que los elementos se envuelvan en dispositivos móviles */
+    background-color: #f6fafb;
+  }
+
+  .texto-postbanner {
+    padding: 0 25px;
+    /* Reduce el padding para dispositivos móviles */
+    text-align: justify;
+  }
+
+  .container-postbanner {
+
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding-left: 25px;
+    margin-bottom: 40px;
+  }
+
+  .column-postbanner {
+
+    margin-bottom: 20px;
+    /* Reduce el margen inferior para dispositivos móviles */
+    padding-top: 10px;
+
+  }
+
+  .column-postbanner h2 {
+    margin-top: 10px;
+    /* Reduce el margen superior para dispositivos móviles */
+    margin-bottom: 33px;
+  }
+
+  .themebutton {
+    position: relative;
+    background-color: var(--rojo);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+
+
+    transition: background-color 0.3s ease;
+  }
+
+  .themebutton:hover {
+    background-color: darkred;
+  }
+
+
+  .image-container0,
+  .image-container1,
+  .image-container2,
+  .image-container3 {
+    position: absolute;
+    top: 45%;
+    left: 0px;
+    z-index: 1;
+    width: 100%;
+  }
+
+  .marcofondo {
+
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    opacity: 80%;
+    background-color: #2C4259;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    height: 150px;
+   
+    border-radius: 0px;
+  }
+
+
+
+
+  .texto_marcofondo {
+    position: absolute;
+    /* Cambia a position: absolute */
+    margin-top: 32px;
+    margin-left: 21px;
+   margin-right: 14px;
+    width: 710px;
+    /* Ajusta el ancho al 100% */
+    height: 100%;
+    /* Ajusta la altura al 100% */
+    color: var(--blanco);
+  }
+
+  .imagen_costado {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 12px;
+  }
+
+  .button_info0 {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+    left: 450px;
+    margin-top: 94px;
+    position: relative;
+    transform: translateX(-50%);
+  }
+
+  .button_info0:hover {
+    background-color: darkred;
+    transform: scale(1.1);
+  }
+
+  .button_info0:active {
+    background-color: crimson;
+    transform: scale(0.9);
+  }
+
+
+
+  .cabeid {
+
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    z-index: 99;
+    position: relative;
+    border-bottom: 1px solid #ffffff4d;
+  }
+
+  .redesid {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    margin-left: 30px;
+    font-size: 30px;
+    color: #fff;
+  }
+
+  .custom-list {
+    padding-right: 0;
+    /* Elimina el espacio adicional a la derecha */
+  }
+
+  .custom-list2 {
+    padding-right: 0;
+    /* Elimina el espacio adicional a la derecha */
+  }
+
+
+
+
+  .p-md {
+    color: #020247;
+    font-size: 22px;
+    font-family: 'Lato', Helvetica;
+    margin-left: 30px;
+
+  }
+
+
+  .mb-3 {
+
+    font-size: 18.5px;
+    font-family: 'Lato', Helvetica;
+    margin-left: 30px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 140%;
+    color: #0F6CB0;
+  }
+
+
+  .module-team-two {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    column-count: 2;
+    column-gap: 25px;
+
+
+  }
+
+  .module-team-three {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 86px;
+    column-count: 2;
+    column-gap: 25px;
+
+
+  }
+
+  .module-team-four {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 86px;
+    column-count: 2;
+    column-gap: 25px;
+
+
+  }
+
+  .module-team-five {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 86px;
+    column-count: 2;
+    column-gap: 25px;
+
+
+  }
+
+
+  .custom-list2 {
+    text-align: justify;
+    padding-left: 1.5em;
+    /* Ajusta el valor según sea necesario */
+    margin-top: 0;
+    /* Agrega esta línea para eliminar el margen superior */
+    padding-right: 110%;
+  }
+
+  .custom-list2 li {
+    list-style: none;
+    position: relative;
+    display: flex;
+    /* Añade un contenedor flex */
+    align-items: flex-start;
+    /* Alinea los elementos al inicio */
+    overflow-wrap: break-word;
+    /* Agrega esta línea para envolver el texto dentro del contenedor */
+
+  }
+
+  .custom-list2 li:before {
+    content: "";
+    flex-shrink: 0;
+    /* Evita que la viñeta se encoja */
+    width: 0.45em;
+    /* Ajusta el valor según sea necesario */
+    height: 0.45em;
+    /* Ajusta el valor según sea necesario */
+    margin-right: 0.5em;
+    /* Ajusta el valor según sea necesario */
+    margin-top: 0.5em;
+    /* Ajusta el valor según sea necesario */
+    border-radius: 50%;
+    background-color: black;
+    /* Cambia el color según sea necesario */
+  }
+
+  .module-team__wrapper3 {
+    width: 49%;
+    /* Ajusta el ancho según tus necesidades */
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+
+
+
+  .module-team__circle {
+    position: absolute;
+    top: -11px;
+    left: 99px;
+    transform: translate(-50%, -50%);
+    width: 165px;
+    /* Cambia el ancho a 165px */
+    height: 165px;
+    /* Cambia la altura a 165px */
+    border-radius: 50%;
+    background-color: white;
+    overflow: hidden;
+    z-index: 2;
+  }
+
+  .module-team__circle img {
+    display: block;
+    width: 100%;
+    height: auto;
+
+  }
+
+  .section-container {
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+  }
+
+  .container_contact {
+    display: grid; /* Cambia a grid */
+    grid-template-columns: 1fr 1fr; /* Divide en dos columnas iguales */
+    align-items: flex-start;
+    height: 100vh;
+    padding: 4%;
+    margin-top: 0px;
+    flex-direction: column; /* Añade esta propiedad */
+  }
+
+  .banner-container_contact {
+   display: flex;
+   justify-content: flex-end;
+   align-items: flex-start;
+    /* Ancho fijo del banner */
+    background-color: #f2f2f2;
+    
+    text-align: center;
+  }
+
+  .banner-container_contact img {
+    width: 100%;
+    align-items: flex-start;
+    
+  }
+
+  .form-container_contact {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 40px;
+    
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .form-container_contact h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .form-container_contact label {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .form-container_contact input,
+  .form-container_contact select,
+  .form-container_contact textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 20px;
+  }
+
+  .form-container_contact textarea {
+    height: 120px;
+    resize: vertical;
+  }
+
+  .form-container_contact input[type="submit"] {
+    background-color: var(--rojo);
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+
+  .form-container_contact input[type="submit"]:hover {
+    background-color: var(--rojo);
+  }
+
+  .form-container_contact .company-logo {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 40px;
+  }
+
+
+  .ventana {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 100%;
+    background-image: linear-gradient(to top, #825649, #950909, #e72a2a);
+    padding: 10px;
+  }
+
+  .ventana h2 {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .ventana p {
+    color: white;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .boton_estilo {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: var(--rojoespecial);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .boton_estilo:hover {
+    background-color: #c0c5c6;
+  }
+
+  .imagen_centro {
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+  }
+
+  .seccion_nosotros {
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 5px;
+  }
+
+  .class_bloque1 {
+  
+    width: auto;
+    height: auto;
+  padding-right: 40px;
+  }
+
+  .class_bloque2 {
+   
+    
+    padding: 20px;
+    font-size: 12px;
+    background-color: var(--rojo);
+    
+    margin-left: 16px;
+    margin-right: 16px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+    margin-bottom: 80px;
+  }
+
+  
+  .class_bloque2 h1 {
+    color: white;
+  }
+
+  .class_bloque2 p {
+    color: white;
+  }
+
+  .imgnosotros {
+    width: 70%;
+    height: auto;
+    margin-left: 0;
+    margin-bottom: 20px;
+    position: static;
+  }
+
+  .seccion_nosotros {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  .class_bloque1 {
+    margin: 20px;
+    width: 100%;
+    height: auto;
+  }
+
+
+  .imgnosotros {
+    position: static;
+    margin: 0px;
+    padding: 0;
+    width: 100%;
+    height: auto;
+  }
+
+  .hero-banner1 {
+    height: 200px;
+  }
+
+
+  .hero-banner1 {
+    width: 100%;
+    height: 300px;
+    margin: 0px 0px 50px;
+    background: url('https://hl7peru.org/es/img/abous us.png') no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  .executive-section {
+    background-color: #24262b;
+    padding: 50px 0;
+    text-align: center;
+    margin-top: 80px;
+   
+  }
+  
+  .executive-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .executive-item {
+    margin-bottom: 60px;
+    text-align: left;
+  }
+  
+  .executive-item h2 {
+    font-size: 24px;
+    color: var(--rojo);
+    margin-bottom: 10px;
+    margin-left: 30px;
+  }
+  
+  .executive-item p {
+    font-size: 16px;
+    color: var(--blanco);
+    line-height: 1.6;
+    margin: 0 30px 0 50px;
+    max-width: 1130px;
+    text-align: justify;
+  }
+  
+  .valores {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0;
+    flex-wrap: wrap;
+  }
+  
+  .valorn1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    text-align: center;
+    margin-right: 40px;
+    margin-bottom: 40px;
+  }
+  
+  .texttitu h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--rojo);
+    margin-bottom: 20px;
+    
+  }
+  
+  .texttitu p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 40px;
+  }
+  
+  .valores p {
+    font-size: 16px;
+    color: #333;
+    text-align: left;
+  }
+  
+  .valores p:before {
+    color: #333;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .imagen-wrapper {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    margin-top: 40px;
+  }
+  
+  .imagen-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+
+
+  .banner_eventoCIP {
+    width: 100%;
+    height: 300px;
+    margin: 0px 0px 50px;
+    background: url('https://hl7peru.org/es/img/bannereventocip.png') no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+
+  .headercip {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .sectioncip {
+    margin-bottom: 20px;
+    padding: 20px;
+    width: 100%;
+    max-width: 800px;
+    box-sizing: border-box;
+    text-align: justify;
+  }
+  
+  .sectioncip2 {
+    width: 100%;
+    max-width: 800px;
+    box-sizing: border-box;
+    text-align: justify;
+    text-indent: 20px;
+  }
+  
+  .sectioncip h2 {
+    color: #e60000;
+  }
+  
+  .sectioncip ol {
+    counter-reset: item;
+    padding-left: 0;
+    text-align: justify;
+  }
+  
+  .sectioncip li {
+    display: block;
+    list-style-type: none;
+    counter-increment: item;
+  }
+  
+  .sectioncip li:before {
+    content: counter(item) ". ";
+    font-weight: bold;
+    display: inline-block;
+    width: 20px;
+    text-align: right;
+  }
+  
+  .sectioncip p {
+    display: inline;
+    text-indent: 20px;
+  }
+  
+  .panelists {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  
+  .panelist {
+    width: 100%;
+    max-width: 350px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    text-align: center;
+    box-sizing: border-box;
+    text-align: justify;
+    border-radius: 20px;
+  }
+  
+  .panelist .image-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .panelist img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+  
+  .event-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .event-table th,
+  .event-table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  .event-table th {
+    background-color: #e60000;
+    color: white;
+    text-align: left;
+    font-weight: bold;
+  }
+  
+  .event-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .event-table tbody tr:hover {
+    background-color: #e5e5e5;
+  }
+  
+  .estructura {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .video-section {
+    margin-top: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    max-width: 800px;
+    box-sizing: border-box;
+  }
+  
+  .video-container {
+    flex: 1;
+  }
+  
+  .video-container video {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  .description {
+    margin-top: 60px;
+    margin-left: 20px;
+    flex: 1;
+  }
+  
+  .description p {
+    text-align: justify;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .description p::after {
+    content: "";
+    display: block;
+    margin-top: 10px;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .form-section {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-section label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  .form-group input[type="radio"] {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+  
+  .form-group label {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  input[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  .popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    padding: 20px;
+    width: 500px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    z-index: 9999;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+  }
+  
+  .sectioncip2 button {
+    background-color: #FF3366;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    margin-left: 70%;
+    margin-bottom: 35px;
+  }
+  
+  .sectioncip2 p {
+    margin-bottom: 5px;
+  }
+  
+  .sectioncip2 button a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .video-section{
+    padding: 13px;
+  }
+
+  .sectioncip2 img{
+    padding: 15px;
+   }
+  
+
+   .banner-flyereventocip {
+    width: 100%;
+    height: 548px;
+    margin: 0px 0px 50px;
+    background: url('https://hl7peru.org/es/img/Bannertablet_CIP.png') no-repeat;
+    background-size: cover;
+    background-position: center -157px; 
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  
+  .image-container0{
+    position: absolute;
+   top:3px;
+    left: 0px;
+    z-index: 1;
+    width: 100%;
+   
+  }
+  
+  
+  
+  .button_info1 {
+  
+    background-color: rgb(52, 149, 141);
+    color: white;
+    padding: 20px 30px;
+    border-radius: 15px;
+    border: none;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+  
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+    position: absolute;
+    margin-left: 75%;
+    margin-top: 39%;
+  
+  }
+  
+
+  
+  .button_info1:hover {
+    background-color: rgb(6, 7, 55);
+    transform: scale(1.1);
+  }
+  
+  .button_info1:active {
+    background-color: rgb(50, 80, 145);
+    transform: scale(0.9);
+  }
+  
+  

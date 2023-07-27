@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Expires" content="0">
+	<meta http-equiv="Last-Modified" content="0">
+	<meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
+	<meta http-equiv="Pragma" content="no-cache">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+		integrity="sha512-5mn5uSQn99jtE+po/4jG4tFj9Ir7UDNGFk1uq7qjJwd2hV7g48y30xuB7JVnRzXu75lEfb+f19lZ7wqKyiB2PQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+		integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/styleidiomas.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="../es/css/computer.css" media="screen and (min-width: 1080px)">
+	<link rel="stylesheet" href="../es/css/tablet.css" media="screen and (max-width: 1079px) and (min-width: 768px)">
+	<link rel="stylesheet" href="../es/css/mobile-390.css" media="screen and (max-width: 767px) and (min-width: 321px)">
+	<link rel="stylesheet" href="../es/css/mobile-320.css" media="screen and (max-width: 320px)">
+	<link rel="stylesheet" href="css/swiper-bundle.min.css" />
+
+
+	<title>Inicio</title>
+
+
+	<script>
+		window.addEventListener('DOMContentLoaded', (event) => {
+			const menuBtn = document.querySelector('.menu-toggle');
+			const menu = document.querySelector('.menu__items');
+
+			menuBtn.addEventListener('click', toggleMenu);
+
+			function toggleMenu() {
+				menuBtn.classList.toggle('active');
+				menu.classList.toggle('active');
+			}
+		});
+	</script>
+
+
+	<script>
+		window.addEventListener('scroll', function () {
+			var scrollToTopButton = document.getElementById("scroll-to-top");
+
+			if (window.scrollY > 200) {
+				scrollToTopButton.style.display = "block";
+			} else {
+				scrollToTopButton.style.display = "none";
+			}
+		});
+
+		window.onload = function () {
+			document.getElementById("scroll-to-top").addEventListener("click", function () {
+				document.body.scrollTop = 0;
+				document.documentElement.scrollTop = 0;
+			});
+		};
+	</script>
+
+	<script>
+		window.addEventListener('DOMContentLoaded', (event) => {
+			const dropdown = document.querySelector('.dropdown');
+			const dropdownContent = document.querySelector('.dropdown-content');
+
+			dropdown.addEventListener('click', toggleDropdown);
+			dropdown.addEventListener('mouseleave', closeDropdown);
+
+			function toggleDropdown() {
+				dropdownContent.classList.toggle('active');
+			}
+
+			function closeDropdown() {
+				dropdownContent.classList.remove('active');
+			}
+		});
+	</script>
+
+
+
+
+</head>
+
+<body>
+
+
+	<!--
+	<a id="whatsapp-button" href="https://api.whatsapp.com/send?phone=956194180" target="_blank">
+		<img src="img/boton whatsapp.png" alt="WhatsApp">
+	</a> -->
+
+
+
+	<a href="#" id="scroll-to-top" title="Ir arriba">
+		<i class="fas fa-arrow-up"></i>
+	</a>
+
+	<div class="cabeid">
+		<div class="fondo">
+			<div class="redesid">
+				<div class="redes-sociales">
+					<a href="https://www.linkedin.com/company/capitulo-hl7-peru/" target="_blank"
+						rel="noopener noreferrer"> <i class="fab fa-linkedin-in"></i></a>
+					<a href="https://twitter.com/HL7Peru" target="_blank" rel="noopener noreferrer"> <i
+							class="fab fa-twitter"></i></a>
+					<a href="https://www.facebook.com/capitulohl7peru" target="_blank" rel="noopener noreferrer"> <i
+							class="fab fa-facebook"></i></a>
+					<a href="https://www.instagram.com/hl7peru/" style="font-size:21px" target="_blank"
+						rel="noopener noreferrer"> <i class="fab fa-instagram"></i></a>
+
+				</div>
+				<a href="https://hl7peru.org/webmail" target="_blank" rel="noopener noreferrer" class="login-button">
+					<i class="fas fa-user"></i> Iniciar sesión
+				</a>
+			</div>
+		</div>
+	</div>
+
+
+	<header>
+
+
+		<div class="header__logo-container">
+			<div id="sideNavigation" class="menu-toggle">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+
+			<a href="index.html">
+				<img class="header__logo" src="img/HL7_International_RGB_Peru.jpg" alt="Logotipo">
+			</a>
+
+
+			<nav class="menu">
+
+				<div class="menu__items">
+					<ul>
+						<li><a href="index.html">Inicio</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropbtn">Nosotros <i class="fas fa-chevron-down"></i></a>
+							<div class="dropdown-content">
+								<a href="../es/nosotros.html">Sobre nosotros</a>
+
+								<a href="../es/directorio.html">Equipo directivo</a>
+								<a href="../es/aliados.html">Aliados estratégicos</a>
+								<a href="../es/membresias.html">Programa de membresías</a>
+								<a href="../es/comunidad.html">Comunidad</a>
+							</div>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropbtn">Nuestro trabajo <i class="fas fa-chevron-down"></i></a>
+							<div class="dropdown-content">
+								<a href="../es/blog.html">Blog</a>
+								<a href="../es/eventos.html">Eventos</a>
+								<a href="../es/webiners.html">Webiners</a>
+							</div>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropbtn">Recursos<i class="fas fa-chevron-down"></i></a>
+							<div class="dropdown-content">
+								<a href="../es/acercahl7.html">Acerca de HL7</a>
+								<a href="../es/estandares.html">Estándares</a>
+								<a href="../es/guias.html">Guías</a>
+								<a href="../es/sitiosinteres.html">Sitios de interés</a>
+							</div>
+						</li>
+						<li><a href="../es/contacto.html">Contacto</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropbtn">Idiomas <i class="fas fa-chevron-down"></i></a>
+							<div class="dropdown-content">
+								<a href="../en/index_en.html"><img src="img/en.png" alt=""
+										style="width: 21px; height: 14px;"> Inglés</a>
+								<a href="../es/index.html"><img src="img/es.jpg" alt=""
+										style="width: 21px; height: 14px;"> Español</a>
+							</div>
+						</li>
+						<li class="search-li">
+							<div class="search-box">
+								<input type="text" placeholder="Buscar">
+								<button type="submit"><i class="fas fa-search"></i></button>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</header>
+
+
+
+
+	<main>
+		<section class="hero-banner">
+			<div class="banner-content">
+				<h1>Directiva HL7 Perú </h1>
+				<p>Período 2023 - 2027</p>
+			</div>
+		</section>
+
+
+		<section>
+			<div class="wrapper">
+				<div class="title">
+					<p class="p-lg fw-bold">Consejo directivo</p>
+					<hr class="mb-4">
+				</div>
+			</div>
+		</section>
+
+
+		<section class="">
+			<div class="wrapper mb-4">
+				<p class="p-lg fw-bold"></p>
+				<p>En el mes de marzo de 2023, HL7 International autorizó la creación de esta apasionante asociación.
+					Diez miembros directivos visionarios se unieron para formar el poderoso Consejo Directivo, encargado
+					de liderar esta institución durante un emocionante período de 4 años. </p>
+				<p>HL7 Perú está listo para revolucionar el campo de la salud y establecer nuevos estándares en el
+					ámbito nacional e internacional.</p>
+			</div>
+		</section>
+
+
+		<section>
+			<div class="wrapper mb-5">
+				<div class="subtitle mt-5 mb-4">Directorio</div>
+				<div class="module-team">
+
+					<div class="module-team__wrapper1">
+						<div class="module-team__circle">
+							<img src="img/directorio/foto_styp.jpeg" alt="">
+						</div>
+						<div class="module-team__copy2">
+
+							<h3 class="p-md">Styp Bill Roy Canto Rondón
+								<a href="https://www.linkedin.com/in/stypcanto/" target="_blank" class="linkedin-icon">
+									<img src="img/linkedin.png" alt="LinkedIn Icon">
+								</a>
+							</h3>
+							<p class="p-sm mb-3">Presidente</p>
+							<ul class="custom-list">
+								<li>Consultor en proyectos de innovación en salud digital</li>
+								<li>Ingeniero de Telecomunicaciones de profesión, con más de 12 años de experiencia, 8
+									de ellos en el campo de la salud digital, vasta especialización en el área de la
+									Telemedicina; elaboración e implementación de proyectos relacionados a desarrollo de
+									software e instalación de equipos informáticos, electrónicos y biomédicos.
+								</li>
+								<li>Impulsor de tecnologías relacionadas a Transformación Digital, eHealth,
+									Interoperabilidad, Cloud Computing, Big Data, Inteligencia de Datos, Inteligencia
+									Artificial, Telemedicina, Desarrollo Web Front-end, Back-end, web services
+									SOAP-REST, gestores de contenido, Redes de Telecomunicaciones, Comunicaciones
+									Móviles, Seguridad de la Información, Gestión de Proyectos y Proyectos en Inversión
+									Pública. </li>
+								<li>Miembro del Comité Especializado de Tecnologías para la Salud del Capítulo de
+									Ingeniería
+									Electrónica del CD Lima-CIP.</li>
+								<li>Vocal de la Organización Internacional de Telemedicina y Telesalud.</li>
+								<li>Cursos y pasantías relacionados a temas de especialización en Telemedicina en
+									distintos
+									países tales como Corea del Sur, Colombia, México, Brasil y Reino Unido.</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="module-team__wrapper2">
+						<div class="module-team__circle">
+							<img src="img/directorio/Rossana-Rivas-23-Oct-2022.png" alt="">
+						</div>
+						<div class="module-team__copy2">
+
+							<h3 class="p-md">Pilar Rossana Rivas Tarazona
+								<a href="https://www.linkedin.com/in/rossana-rivas-tarazona-a936aa3/" target="_blank"
+									class="linkedin-icon">
+									<img src="img/linkedin.png" alt="LinkedIn Icon">
+								</a>
+							</h3>
+
+							<p class="p-sm mb-3">Vice Presidente</p>
+							<ul class="custom-list">
+								<li>MSc Gestión, Dirección, Organización y Estrategia-Univ.Jean-Moulin-Lyon-III,
+									FRANCIA; estudios doctorales completos en Innovación en Salud-Ecole des Mines de
+									Paris, FRANCIA; Diploma de Especialización en Ciencias de la Salud-Université
+									Catholique de Louvain-BÉLGICA; 15 años en Ing. Biomédica, Ing. Clínica, Evaluación
+									de Tecnología y Salud Digital con uso de dispositivos médicos. Profesor e
+									Investigador.</li>
+								<li>Consultante en World Health Organization-WHO Collaborating Center for HTM, UVM, USA.
+									Consultor Internacional en Ing. Biomédica, Ing. Clínica, Evaluación de Tecnología y
+									Salud Digital con uso de dispositivos médicos.</li>
+								<li>Elected Board de Clinical Engineering Division y Health Technology Assessment
+									Division de International Federation of Medical & Biological Engineering-IFMBE, USA;
+									Board de Health Technology Assessment for the Americas-RedETSA, Panamerican Health
+									Organization-PAHO,USA; Member: American College of Clinical Engineering-ACCE, USA.
+								</li>
+								<li>Miembro del Comité Especializado de Tecnologías para la Salud; Capítulo de Ing.
+									Electrónica del CD Lima-CIP, PERÚ.</li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+				<div class="module-team-two">
+
+					<div class="module-team__wrapper3">
+						<div class="module-team__circle-2">
+							<img src="img/directorio/gabriel.jpg" alt="">
+						</div>
+						<div class="module-team__copy3">
+							<h3 class="p-md">Gabriel Augusto Castro Ormeño
+								<a href="https://www.linkedin.com/in/gcastroo/" target="_blank" class="linkedin-icon">
+									<img src="img/linkedin.png" alt="LinkedIn Icon">
+								</a>
+							</h3>
+
+							<p class="mb-3">Secretario</p>
+							<ul class="custom-list2">
+								<li>Médico-Cirujano y Administrador de Empresas(e).</li>
+								<li>Egresado de las maestrías de Docencia e Investigación en Salud y Medicina
+									Ocupacional y Medio Ambiente.</li>
+								<li>Posee Diplomados en Calidad en Salud, Salud Ocupacional y Auditoría de Servicios
+									de Salud.</li>
+								<li>Estudios en gestión ágil de proyectos y ciencias de datos.</li>
+								<li>Docente en la Carrera de Medicina Humana en la Universidad Científica del Sur
+									(UCSUR).</li>
+								<li>Médico en el Centro Nacional de Salud Ocupacional y Protección del Ambiente para
+									la Salud (CENSOPAS) en el Instituto Nacional de Salud del Peru (INS-PERÚ).</li>
+								<li>Fue Presidente del Comité de Tecnologías de la Información y Comunicación en
+									Salud (TICS) del Colegio Médico del Perú (CMP) Consejo Regional III- Lima.</li>
+								<li>Miembro Fundador de la Asociación de Calidad en Salud del Perú (ASOCALP).</li>
+								<li>Miembro experto invitado a la Comisión de Gestión de Tecnología para la Salud
+									del Colegio de Ingenieros del Perú (CIP), Consejo Departamental Lima.</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="module-team__wrapper3">
+						<div class="module-team__circle-2">
+							<img src="img/directorio/sebastian.jpg" alt="">
+						</div>
+						<div class="module-team__copy3">
+							<h3 class="p-md">José Sebastián Ibarra Arregui
+								<a href="https://www.linkedin.com/in/sebastian-ibarra-arregui/" target="_blank"
+									class="linkedin-icon">
+									<img src="img/linkedin.png" alt="LinkedIn Icon">
+								</a>
+							</h3>
+
+
+							<p class="mb-3">Tesorero</p>
+							<ul class="custom-list2">
+								<li>Egresado de Ingeniería Biomédica en la Pontificia Universidad Católica del Perú
+									(PUCP) y Universidad Peruana Cayetano Heredia (UPCH).</li>
+								<li>Trainee Technical en el área de Educación y Aplicaciones Clínicas en Siemens
+									Healthineers Perú.</li>
+								<li>Investigador y tesista asociado dentro del Grupo de Telecomunicaciones Rurales -
+									GTR PUCP. Investigación en temas de Telesalud y Telemedicina Rural.</li>
+								<li>Tesorero de la Asociación HL7 Perú, miembro fundador.</li>
+								<li>Miembro fundador de la Rama Estudiantil IEEE UPCH en 2019.</li>
+								<li>Miembro fundador de la Asociación de Estudiantes de Ingeniería Biomédica en 2020
+									como vicepresidente.</li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+
+
+
+				<div class="module-team-three">
+
+					<div class="module-team__wrapper3">
+						<div class="module-team__circle-2">
+							<img src="img/directorio/Cynthia.jpg" alt="">
+						</div>
+						<div class="module-team__copy3">
+							<h3 class="p-md">Cynthia Téllez Gutiérrez
+								<a href="https://www.linkedin.com/in/cynthia-t%C3%A9llez-2a291b17/" target="_blank"
+									class="linkedin-icon">
+									<img src="img/linkedin.png" alt="LinkedIn Icon">
+								</a>
+							</h3>
+							<p class="mb-3">Vocal</p>
+							<ul class="custom-list2">
+								<li>Consultora legal en materia de Protección de Datos Personales, Derecho e Internet.
+								</li>
+								<li>Experto Certificado en Protección de Datos por el Institute of Audit &
+									IT-Governance. </li>
+								<li>Abogada por la Universidad Nacional Mayor de San Marcos. </li>
+								<li>Master en Seguridad Jurídica y Seguridad Informática en Sociedades Digitalizadas en
+									la Universidad Lille 2 Francia. </li>
+								<li>Egresada de la Maestría en Gestión Tecnológica de la Información de la Universidad
+									Peruana de Ciencias Informáticas. </li>
+								<li>Fue Docente universitaria en la UNMSM, en la Escuela de Postgrado de la Universidad
+									de Lima y otros. Coordinadora de la iniciativa DateaSeguro en Perú. </li>
+								<li>Estudios de maestría en Derecho de los negocios en Universidad Toulouse 1 Francia.
+									Pasantía en Estudio de Abogados Écija (Madrid-España). </li>
+								<li>Premio Accésit 2014 de la XVIII Edición de los Premios de Protección de Datos
+									Personales de la Agencia Española de Protección de Datos Personales con texto de
+									investigación grupal. </li>
+								<li> Ponente en distintos eventos en materia de protección de datos personales y
+									derecho. </li>
+								<li>Consultora contratada para redacción del ante proyecto del Reglamento de la Ley
+									Marco de Telesalud. </li>
+								<li>Asesora legal externa invitada por el Ministerio de Justicia para la elaboración de
+									la Ley de Protección de Datos Personales. </li>
+								<li>Fue Jefa de la División de Protección de Datos Personales y Acceso a la Información
+									en Iriarte & Asociados. </li>
+								<li>Fue Miembro del Área de Proyectos de Derecho Civil y Procesal Civil en la Editora
+									Jurídica Grijley. </li>
+
+							</ul>
+						</div>
+					</div>
+
+					<div class="module-team__wrapper3">
+						<div class="module-team__circle-2">
+							<img src="img/directorio/Miguel.jpg" alt="">
+						</div>
+						<div class="module-team__copy3">
+							<h3 class="p-md">Miguel Sebastián Egoavil Ayala
+								<a href="https://www.linkedin.com/in/miguel-s-egoavil-ayala-8286a840/" target="_blank"
+									class="linkedin-icon">
+									<img src="img/linkedin.png" alt="LinkedIn Icon">
+								</a>
+							</h3>
+							<p class="mb-3">Vocal</p>
+							<ul class="custom-list2">
+								<li>Médico-Cirujano y egresado de la Maestría en Informática Biomédica en Salud Global,
+									ambos por la Universidad Peruana Cayetano Heredia. </li>
+								<li>Más de 10 años de experiencia en la implementación de proyectos de Salud Digital
+									(Telesalud, Interoperabilidad, Inteligencia Artificial, entre otros), tanto a nivel
+									de academia (proyectos de investigación), como en el sector privado. </li>
+
+								<li>Estudios de diplomaturas de posgrado en en Big Data y Machine Learning (UTEC),
+									Sistemas de Información en Salud (Universidad de Chile) y Gerencia de Proyectos
+									(Universidad ESAN). </li>
+
+								<li>En el sector privado, Director Médico de Medical Innovation & Technology, implementa
+									proyectos de Telesalud para zonas rurales en el marco de la responsabiidad social
+									empresarial, y actualmente soy Gerente de Telemedicina de Bupa Global Latinoamérica.
+								</li>
+
+							</ul>
+						</div>
+					</div>
+
+				</div>
+
+
+				<div class="module-team-four">
+
+					<div class="module-team__wrapper3">
+						<div class="module-team__circle-2">
+							<img src="img/directorio/Javier.png" alt="">
+						</div>
+						<div class="module-team__copy3">
+							<h3 class="p-md">Javier Alejandro Santisteban Romero
+								<a href="https://www.linkedin.com/in/javier-santisteban-romero-74463725/"
+									target="_blank" class="linkedin-icon">
+									<img src="img/linkedin.png" alt="LinkedIn Icon">
+								</a>
+							</h3>
+							<p class="mb-3">Vocal</p>
+							<ul class="custom-list2">
+								<li>Profesional de Ingenieria de Sistemas con especialización en Gerencia de
+									Proyectos e Inteligencia de Negocios. </li>
+								<li>Veinte años de experiencia en gestión pública en el sector salud a nivel de gobierno
+									nacional; con sólidos conocimientos en planeamiento estratégico, gestión de procesos
+									y proyectos de desarrollo social y económico, orientados a generar valor público.
+								</li>
+								<li>Con amplia experiencia en formulación e implementación de normativas, diseño y
+									gestion de plataformas de atención y servicios al usuario, planes de
+									fortalecimiento, gestión de información y transformación digital. </li>
+								<li>Definidos valores humanos y capaz de trabajar en equipo y de forma independiente,
+									según las necesidades de la Organización; conferencista y con publicaciones sobre
+									temas de desarrollo social en Perú. </li>
+
+							</ul>
+						</div>
+					</div>
+
+					<div class="module-team__wrapper3">
+						<div class="module-team__circle-2">
+							<img src="img/directorio/Marcelino.PNG" alt="">
+						</div>
+						<div class="module-team__copy3">
+							<h3 class="p-md">Marcelino Esteban Andía Ticona
+								<a href="https://www.linkedin.com/in/marcelino-and%C3%ADa-0a43a6190/" target="_blank"
+									class="linkedin-icon">
+									<img src="img/linkedin.png" alt="LinkedIn Icon">
+								</a>
+							</h3>
+							<p class="mb-3">Vocal</p>
+							<ul class="custom-list2">
+								<li>Cirujano Dentista, Magister en Administración, Doctor en Educación</li>
+								<li>Diploma de Especialización en Gobernanza y Gestión Digital </li>
+								<li>Diplomado en business Process Management con Bizagi</li>
+								<li>Diplomado en Gestión de Tecnologías en Salud</li>
+								<li>Certificado Scrum Foundations, Scrum Master</li>
+								<li>Integrante de Equipo Técnico de la Oficina de Innovación y Desarrollo de la Oficina
+									General de Tecnologías de la Información del Ministerio de Salud de Perú</li>
+								<li>Especialista integrante del Comité Técnico de Normalización 129 Informática en salud
+									para el Instituto Nacional de Calidad –INACAL </li>
+								<li>Catedrático Universitario Pre y Posgrado UNMSM, UPSJB</li>
+
+							</ul>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="module-team-five">
+
+					<div class="module-team__wrapper3">
+						<div class="module-team__circle-2">
+							<img src="img/directorio/Jose Luis.jpg" alt="">
+						</div>
+						<div class="module-team__copy3">
+							<h3 class="p-md">Jose Luis Huaman Villar
+								<a href="https://www.linkedin.com/in/jose-luis-huaman-villar-b215a729/" target="_blank"
+									class="linkedin-icon">
+									<img src="img/linkedin.png" alt="LinkedIn Icon">
+								</a>
+							</h3>
+							<p class="mb-3">Vocal</p>
+							<ul class="custom-list2">
+								<li>Ingeniero de Sistemas con más de 20 años de experiencia en gestión de tecnologías de
+									la información, gobierno y transformación digital, arquitectura empresarial,
+									arquitectura orientada a servicios, gestión de proyectos, gestión por procesos,
+									ciberseguridad. seguridad de la información, tecnologías en computación en la nube,
+									tecnologías disruptivas con blockchain, tecnologías con hiperconvergencia
+									computacional. </li>
+								<li>Implementador de plataformas sectoriales de interoperabilidad tales como la
+									Plataforma de Interoperabilidad en Salud - PIDSALUD (que soporte estandares
+									semánticos y sintácticos internacionales), Plataforma para el Repositorio de
+									Historia Clínica Electrónica - RENHICE, Plataforma para firma digital y electrónica,
+									Plataforma para el Registro de Afiliados al Aseguramiento Universal en Salud - RAUS,
+									Plataforma para el Modelo de Acreditación en Salud, entre otros; utilizando entornos
+									tanto OnPremise como Cloud Pública y Privada; de la misma manera del uso de
+									estándares de interoperabilidad tales como X12N, HL7, HL7 FHIR. </li>
+								<li>Vocal del Capítulo HL7 Perú, Equipo capacitador del Capítulo DAMA Perú. </li>
+
+							</ul>
+						</div>
+					</div>
+
+					<div class="module-team__wrapper3">
+						<div class="module-team__circle-2">
+							<img src="img/directorio/Henry.jpeg" alt="">
+						</div>
+						<div class="module-team__copy3">
+							<h3 class="p-md"> Jhon Henry García Ruiz
+								<a href="https://www.linkedin.com/in/h3nrygr/" target="_blank" class="linkedin-icon">
+									<img src="img/linkedin.png" alt="LinkedIn Icon">
+								</a>
+							</h3>
+							<p class="mb-3">Vocal</p>
+							<ul class="custom-list2">
+								<li>Consultor y empresario con más de 12 años de experiencia dentro del sector privado y
+									público. Especialista en Salud Digital ( Historia Clínica Electrónica / TeleSalud /
+									Interoperabilidad - HL7); de profesión Ingeniero de Sistemas y Computación con
+									Maestría en Administración de Empresas - UTP y Egreso de la Maestría de Ingeniería
+									de Software - UNMSM. </li>
+
+								<li>Director ejecutivo y general (2016-2019) de Telesalud y tecnologías de la
+									información. Contribuí con la elaboración del marco normativo base para los procesos
+									vinculados al Registro Nacional de Historias Clínicas Electrónicas y a la Telesalud
+									( Decretos Legislativos N° 1306 - y N° 1303 - respectivamente ) e interoperabilidad,
+									entre otros. </li>
+
+								<li>Colaboro con organizaciones sin fines de lucro como el Consejo Departamental de Lima
+									del Colegio de Ingenieros del Perú - como Miembro Experto - Comisión de Tecnologías
+									para la Salud. Soy Vocal de la Asociación HL7 Perú y Asociado de la Asociación
+									Peruana de Software Libre APESOL. </li>
+
+							</ul>
+						</div>
+					</div>
+
+				</div>
+
+
+
+
+
+
+
+
+
+
+			</div>
+
+		</section>
+
+
+
+
+
+
+
+
+
+
+	</main>
+
+
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+
+
+
+
+				<div class="footer-col  primer_footer">
+					<h4>Sobre HL7 Perú</h4>
+					<ul>
+						<li><a href="../es/nosotros.html">Sobre nosotros</a></li>
+
+						<li><a href="../es/directorio.html">Equipo directivo</a></li>
+						<li><a href="../es/aliados.html">Aliados estratégicos</a></li>
+						<li><a href="../es/membresias.html">Programa de membresía</a></li>
+					</ul>
+				</div>
+				<div class="footer-col">
+					<h4>Nuestro trabajo</h4>
+					<ul>
+						<li><a href="../es/blog.html">Blog</a></li>
+						<li><a href="../es/eventos.html">Eventos</a></li>
+						<li><a href="../es/webiners.html">Webiners</a></li>
+
+					</ul>
+				</div>
+				<div class="footer-col">
+					<h4>Idiomas</h4>
+					<ul>
+						<li><a href="../es/directorio.html">Español</a></li>
+						<li><a href="../en/directorio.html">Inglés</a></li>
+
+					</ul>
+				</div>
+				<div class="footer-col">
+					<h4>Síguenos</h4>
+					<br>
+					<div class="social-links">
+						<a href="https://www.facebook.com/capitulohl7peru" target="_blank" rel="noopener noreferrer"><i
+								class="fab fa-facebook-f"></i></a>
+						<a href="https://twitter.com/HL7Peru" target="_blank" rel="noopener noreferrer"><i
+								class="fab fa-twitter"></i></a>
+						<a href="https://www.instagram.com/hl7peru/" target="_blank" rel="noopener noreferrer"> <i
+								class="fab fa-instagram"></i></a>
+						<a href="https://www.linkedin.com/company/capitulo-hl7-peru/" target="_blank"
+							rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+
+
+					</div>
+				</div>
+
+				<div class="footer-col2">
+
+					<h4>Contáctenos</h4>
+					<ul> <br>
+						<li><a> <i class="fas fa-map-marker-alt"></i> </a></li>
+						<li><a>Calle Simón Condori 286</a></li>
+						<li><a>Pueblo Libre</a></li>
+						<li><a>Lima, Perú</a></li> <br>
+						<li><a href="#"><i class="fas fa-phone"></i> (+51) 956194180 </a></li>
+						<br>
+						<li><a href="../es/contacto.html"><i class="fas fa-envelope"></i> presidencia@hl7peru.org</a></li>
+					</ul>
+
+				</div>
+
+			</div>
+
+			<p class="footer-text">© 2023 HL7 Perú <br> Website desarrollada por <a
+					href="https://www.linkedin.com/in/stypcanto/" target="_blank" rel="noopener noreferrer">SBRCR </a>
+			</p>
+
+		</div>
+	</footer>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

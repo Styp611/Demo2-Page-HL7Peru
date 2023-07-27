@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description"
+		content="Somos una organización sin fines de lucro que conecta profesionales en una red integrada para impulsar la interoperabilidad en el país.">
+	<meta http-equiv="Expires" content="0">
+	<meta http-equiv="Last-Modified" content="0">
+	<meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
+	<meta http-equiv="Pragma" content="no-cache">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+		integrity="sha512-5mn5uSQn99jtE+po/4jG4tFj9Ir7UDNGFk1uq7qjJwd2hV7g48y30xuB7JVnRzXu75lEfb+f19lZ7wqKyiB2PQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+		integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link rel="stylesheet" href="../es/css/normalize.css">
+	<link rel="stylesheet" href="../es/css/styleidiomas.css">
+	<link rel="stylesheet" href="../es/css/style.css">
+	<link rel="stylesheet" href="../es/css/computer.css" media="screen and (min-width: 1080px)">
+	<link rel="stylesheet" href="../es/css/tablet.css" media="screen and (max-width: 1079px) and (min-width: 768px)">
+	<link rel="stylesheet" href="../es/css/mobile-390.css" media="screen and (max-width: 767px) and (min-width: 321px)">
+	<link rel="stylesheet" href="../es/css/mobile-320.css" media="screen and (max-width: 320px)">
+	<link rel="stylesheet" href="../es/css/swiper-bundle.min.css" />
+
+
+	<title>Inicio</title>
+
+
+	<script>
+		window.addEventListener('DOMContentLoaded', (event) => {
+			const menuBtn = document.querySelector('.menu-toggle');
+			const menu = document.querySelector('.menu__items');
+
+			menuBtn.addEventListener('click', toggleMenu);
+
+			function toggleMenu() {
+				menuBtn.classList.toggle('active');
+				menu.classList.toggle('active');
+			}
+		});
+	</script>
+
+
+	<script>
+		window.addEventListener('scroll', function () {
+			var scrollToTopButton = document.getElementById("scroll-to-top");
+
+			if (window.scrollY > 200) {
+				scrollToTopButton.style.display = "block";
+			} else {
+				scrollToTopButton.style.display = "none";
+			}
+		});
+
+		window.onload = function () {
+			document.getElementById("scroll-to-top").addEventListener("click", function () {
+				document.body.scrollTop = 0;
+				document.documentElement.scrollTop = 0;
+			});
+		};
+	</script>
+
+	<script>
+		window.addEventListener('DOMContentLoaded', (event) => {
+			const dropdown = document.querySelector('.dropdown');
+			const dropdownContent = document.querySelector('.dropdown-content');
+
+			dropdown.addEventListener('click', toggleDropdown);
+			dropdown.addEventListener('mouseleave', closeDropdown);
+
+			function toggleDropdown() {
+				dropdownContent.classList.toggle('active');
+			}
+
+			function closeDropdown() {
+				dropdownContent.classList.remove('active');
+			}
+		});
+	</script>
+
+
+
+
+</head>
+
+<body>
+
+
+	<!--
+	<a id="whatsapp-button" href="https://api.whatsapp.com/send?phone=956194180" target="_blank">
+		<img src="img/boton whatsapp.png" alt="WhatsApp">
+	</a> -->
+
+
+
+	<a href="#" id="scroll-to-top" title="Ir arriba">
+		<i class="fas fa-arrow-up"></i>
+	</a>
+
+	<div class="cabeid">
+		<div class="fondo">
+			<div class="redesid">
+				<div class="redes-sociales">
+					<a href="https://www.linkedin.com/company/capitulo-hl7-peru/" target="_blank"
+						rel="noopener noreferrer"> <i class="fab fa-linkedin-in"></i></a>
+					<a href="https://twitter.com/HL7Peru" target="_blank" rel="noopener noreferrer"> <i
+							class="fab fa-twitter"></i></a>
+					<a href="https://www.facebook.com/capitulohl7peru" target="_blank" rel="noopener noreferrer"> <i
+							class="fab fa-facebook"></i></a>
+					<a href="https://www.instagram.com/hl7peru/" style="font-size:21px" target="_blank"
+						rel="noopener noreferrer"> <i class="fab fa-instagram"></i></a>
+
+				</div>
+				<a href="https://hl7peru.org/webmail" target="_blank" rel="noopener noreferrer" class="login-button">
+					<i class="fas fa-user"></i> Iniciar sesión
+				</a>
+			</div>
+		</div>
+	</div>
+
+
+	<header>
+
+
+		<div class="header__logo-container">
+			<div id="sideNavigation" class="menu-toggle">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+
+			<a href="index.html">
+				<img class="header__logo" src="img/HL7_International_RGB_Peru.jpg" alt="HL7 Perú">
+			</a>
+
+
+			<nav class="menu">
+
+				<div class="menu__items">
+					<ul>
+						<li><a href="index.html">Inicio</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropbtn">Nosotros <i class="fas fa-chevron-down"></i></a>
+							<div class="dropdown-content">
+								<a href="../es/nosotros.html">Sobre nosotros</a>
+
+								<a href="../es/directorio.html">Equipo directivo</a>
+								<a href="../es/aliados.html">Aliados estratégicos</a>
+								<a href="../es/membresias.html">Programa de membresías</a>
+								<a href="../es/comunidad.html">Comunidad</a>
+							</div>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropbtn">Nuestro trabajo <i class="fas fa-chevron-down"></i></a>
+							<div class="dropdown-content">
+								<a href="../es/blog.html">Blog</a>
+								<a href="../es/eventos.html">Eventos</a>
+								<a href="../es/webiners.html">Webiners</a>
+							</div>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropbtn">Recursos<i class="fas fa-chevron-down"></i></a>
+							<div class="dropdown-content">
+								<a href="../es/acercahl7.html">Acerca de HL7</a>
+								<a href="../es/estandares.html">Estándares</a>
+								<a href="../es/guias.html">Guías</a>
+								<a href="../es/sitiosinteres.html">Sitios de interés</a>
+							</div>
+						</li>
+						<li><a href="../es/contacto.html">Contacto</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropbtn">Idiomas <i class="fas fa-chevron-down"></i></a>
+							<div class="dropdown-content">
+								<a href="../en/index_en.html"><img src="img/en.png" alt=""
+										style="width: 21px; height: 14px;"> Inglés</a>
+								<a href="../es/index.html"><img src="img/es.jpg" alt=""
+										style="width: 21px; height: 14px;"> Español</a>
+							</div>
+						</li>
+						<li class="search-li">
+							<div class="search-box">
+								<input type="text" placeholder="Buscar">
+								<button type="submit"><i class="fas fa-search"></i></button>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</header>
+
+
+
+
+	<main>
+
+
+
+		<div class="popup" id="popup">
+			<img src="../es/img/popup.png" alt="Imagen 2" style="margin-top: 10px;">
+			<p>Síguenos para recibir actualizaciones y noticias exclusivas.</p>
+			<div>
+			  <a href="https://www.linkedin.com/company/capitulo-hl7-peru/" target="_blank" style="text-decoration: none;">
+				<img src="../es/img/linkedin.png" alt="LinkedIn" width="32" height="32">
+			  </a>
+			  <a href="https://twitter.com/HL7Peru" target="_blank" style="text-decoration: none;">
+				<img src="../es/img/twitter.png" alt="Twitter" width="32" height="32">
+			  </a>
+			  <a href="https://www.facebook.com/capitulohl7peru" target="_blank" style="text-decoration: none;">
+				<img src="../es/img/facebook.png" alt="Facebook" width="32" height="32">
+			  </a>
+			  <a href="https://www.instagram.com/hl7peru/" target="_blank" style="text-decoration: none;">
+				<img src="../es/img/instagram.png" alt="Instagram" width="32" height="32">
+			  </a>
+			</div>
+			<span class="close-btn" onclick="closePopup()">Cerrar</span>
+		  </div>
+
+		<script>
+			function closePopup() {
+				document.getElementById("popup").style.display = "none";
+			}
+
+		  // Agrega aquí el código para mostrar el pop-up después de un cierto tiempo o al hacer scroll, por ejemplo.
+
+		</script>
+
+
+
+		<!-- Swiper -->
+		<div class="swiper mySwiper">
+			<div class="swiper-wrapper">
+
+				<div class="swiper-slide">
+					<div class="image-container0">
+						<div class="banner-flyereventocip">
+							<a href="eventocip.html" target="_blank">
+								
+								<button class="button_info1">Más información</button>
+							</a>
+						</div>
+					</div>
+					
+				</div>
+
+
+				
+
+				<div class="swiper-slide">
+					<div class="image-container1">
+						<div class="marcofondo">
+							<div class="texto_marcofondo">
+								<p> ¡Te invitamos a conocer a nuestra nueva directiva de HL7 Perú para el período
+									2023-2027!</p>
+							</div>
+							<div class="imagen_costado1">
+								<a href="directorio.html" target="_blank">
+									<button class="button_info0">Más información</button>
+								</a>
+							</div>
+						</div>
+					</div>
+					<img src="img/equipohl7peru2.png" alt="imagen1" class="zoom-imagen" width="100%">
+				</div>
+
+				<div class="swiper-slide">
+					<div class="image-container2">
+						<div class="marcofondo">
+							<div class="texto_marcofondo">
+								<p> Nuestro equipo sólido, unido y colaborativo tiene como objetivo impulsar la
+									interoperabilidad
+									y promover el correcto uso del estándar HL7 en Perú. </p>
+							</div>
+							<div class="imagen_costado1">
+								<a href="directorio.html" target="_blank">
+									<button class="button_info0">Más información</button>
+								</a>
+							</div>
+						</div>
+					</div>
+					<img src="img/equipohl7peru1.png" alt="imagen1" class="zoom-imagen" width="100%">
+				</div>
+
+				<div class="swiper-slide">
+					<div class="image-container3">
+						<div class="marcofondo">
+							<div class="texto_marcofondo">
+								<p> Trabajamos en conjunto para fomentar la integración y el intercambio de información
+									en el ámbito de la salud,
+									buscando mejorar la calidad y la eficiencia de los sistemas y procesos en el
+									sector.</p>
+							</div>
+							<div class="imagen_costado1">
+								<a href="mailto:contacto@hl7peru.org" target="_blank">
+									<button class="button_info0">Más información</button>
+								</a>
+							</div>
+						</div>
+					</div>
+					<img src="img/equipohl7peru3.png" alt="imagen1" class="zoom-imagen" width="100%">
+				</div>
+
+			</div>
+			<div class="swiper-button-next"></div>
+			<div class="swiper-button-prev"></div>
+			<div class="swiper-pagination"></div>
+		</div>
+
+
+		<!-- Swiper JS -->
+		<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+		<!-- Initialize Swiper -->
+		<script>
+			var swiper = new Swiper(".mySwiper", {
+				spaceBetween: 30,
+				centeredSlides: true,
+				autoplay: {
+					delay: 18000, // Cambiar el valor a 18000 (18 segundos)
+					disableOnInteraction: false,
+				},
+				pagination: {
+					el: ".swiper-pagination",
+					clickable: true,
+				},
+				navigation: {
+					nextEl: ".swiper-button-next",
+					prevEl: ".swiper-button-prev",
+				},
+			});
+		</script>
+
+
+
+
+		<section id="section-home">
+			<div id="section-home-inner">
+				<div class="section-container">
+					<div class="section1">
+						<div class="services-builder style1">
+							<div class="iconimage">
+								<a href="#">
+									<img src="img/HL7_International_RGB_Peru.jpg" alt="imagen1" width="200px"
+										width="280px">
+								</a>
+							</div>
+							<div class="iconmain">
+								<h3>Acerca de Nosotros</h3>
+								<p>Somos una organización sin fines de lucro que conecta profesionales en una red
+									integrada para impulsar la interoperabilidad en
+									el país.</p>
+								<p class="iconurl">
+									<a class="themebutton" href="../es/nosotros.html">Leer más</a>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="section2">
+						<div class="services-builder style1">
+							<div class="iconimage">
+								<a href="#">
+									<img class="lazy loaded"
+										src="https://recainsa.org/wp-content/uploads/2023/02/AdobeStock_183449275-380x152.jpeg"
+										data-src="https://recainsa.org/wp-content/uploads/2023/02/AdobeStock_183449275-380x152.jpeg"
+										alt="Nuestro Trabajo" data-was-processed="true">
+								</a>
+							</div>
+							<div class="iconmain">
+								<h3>Nuestro Trabajo</h3>
+								<p>Desde el año 2023, trabajamos para apoyar las estrategias de interoperabilidad en el
+									Perú, impulsamos los espacios de intercambio de experiencias y networking.
+								</p>
+								<p class="iconurl">
+									<a class="themebutton" href="../es/blog.html">Leer más</a>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="section3">
+						<div class="services-builder style1">
+							<div class="iconimage">
+								<a href="#">
+									<img class="lazy loaded"
+										src="https://recainsa.org/wp-content/uploads/2023/02/AdobeStock_110546256-380x152.jpeg"
+										data-src="https://recainsa.org/wp-content/uploads/2023/02/AdobeStock_110546256-380x152.jpeg"
+										alt="Noticias" data-was-processed="true">
+								</a>
+							</div>
+							<div class="iconmain">
+								<h3>Noticias</h3>
+								<p>Encuentra noticias relacionadas a HL7 Perú, artículos de opinión y espacios de
+									intercambio de experiencias en interoperabilidad.</p>
+								<p class="iconurl">
+									<a class="themebutton" href="../es/noticias.html">Leer más</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="clearboth"></div>
+			</div>
+		</section>
+
+
+
+
+		<section id="comunidad" class="fondo">
+			<div class="introduction-inner">
+
+				<div class="introduction-content" style="text-align: center;">
+					<br><br>
+					<h2 style=" color: #0C71C3;">CONÉCTATE CON LA COMUNIDAD DE HL7 PERÚ</h2>
+
+					<img src="img/Post interoperabilidad.svg" alt="Imagen" class="introduction-image">
+
+					<div class="texto-postbanner">
+						<p>
+							Únete a nuestra Comunidad de HL7 Perú, una plataforma abierta a todos donde podrás compartir
+							tus necesidades, propuestas y el trabajo que estás realizando en el campo de la
+							interoperabilidad en salud. Forma parte de este grupo comprometido de profesionales y
+							participa de manera activa.
+							<br> <br>
+							Valoramos tus comentarios y nos comprometemos a transmitirlos desde el Consejo Directivo de
+							HL7 Perú al Directorio de HL7 Internacional, para asegurar que tu voz sea escuchada a nivel
+							global. Trabajemos juntos para impulsar los estándares y avanzar hacia una mejor
+							interoperabilidad en el ámbito de la salud.
+							<br> <br> ¡Te esperamos en nuestra comunidad!
+						</p>
+					</div>
+
+
+					<div class="container-postbanner">
+						<div class="column-postbanner">
+							<h2>Comunidad HL7 International</h2>
+							<a class="themebutton" href="https://chat.fhir.org/">Leer más</a>
+						</div>
+						<div class="column-postbanner">
+							<h2>Comunidad HL7 Perú</h2>
+							<a class="themebutton" href="https://chat.whatsapp.com/LCPanRFA9dRLrGNNqCUrsJ">Unirse</a>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+
+
+
+		<!-- 
+
+		<section id="standards">
+			<div class="section-content">
+				<h2>Estándares de HL7</h2>
+				<p>Explora los diferentes estándares y versiones de HL7 que se utilizan en Perú, cómo se implementan y
+					qué
+					beneficios ofrecen.</p>
+			</div>
+		</section>
+
+		<section id="use-cases">
+			<h2>Casos de Uso en Perú</h2>
+			<p>Destaca ejemplos concretos de cómo HL7 se utiliza en el sistema de salud peruano. Muestra casos de éxito
+				o proyectos implementados que hayan mejorado la interoperabilidad de los datos médicos en Perú.</p>
+		</section>
+
+		<section id="resources">
+			<div class="section-content">
+				<h2>Recursos de HL7</h2>
+				<p>Proporciona una recopilación de recursos útiles, como documentos técnicos, guías de implementación,
+					herramientas de prueba y validación, y enlaces a organizaciones relacionadas con HL7 en Perú.</p>
+			</div>
+		</section>
+
+		<section id="events">
+			<h2>Eventos y Capacitación</h2>
+			<p>Mantén actualizada una sección de eventos y capacitaciones relacionados con HL7 que se lleven a cabo en
+				Perú. Esto puede incluir conferencias, talleres, seminarios o cursos de formación sobre HL7.</p>
+		</section>
+
+	-->
+
+	</main>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+
+
+
+
+				<div class="footer-col  primer_footer">
+					<h4>Sobre HL7 Perú</h4>
+					<ul>
+						<li><a href="../es/nosotros.html">Sobre nosotros</a></li>
+
+						<li><a href="../es/directorio.html">Equipo directivo</a></li>
+						<li><a href="../es/aliados.html">Aliados estratégicos</a></li>
+						<li><a href="../es/membresias.html">Programa de membresía</a></li>
+					</ul>
+				</div>
+				<div class="footer-col">
+					<h4>Nuestro trabajo</h4>
+					<ul>
+						<li><a href="../es/blog.html">Blog</a></li>
+						<li><a href="../es/eventos.html">Eventos</a></li>
+						<li><a href="../es/webiners.html">Webiners</a></li>
+
+					</ul>
+				</div>
+				<div class="footer-col">
+					<h4>Idiomas</h4>
+					<ul>
+						<li><a href="../es/index.html">Español</a></li>
+						<li><a href="../en/index_en.html">Inglés</a></li>
+
+					</ul>
+				</div>
+				<div class="footer-col">
+					<h4>Síguenos</h4>
+
+					<div class="social-links">
+						<a href="https://www.facebook.com/capitulohl7peru" target="_blank" rel="noopener noreferrer"><i
+								class="fab fa-facebook-f"></i></a>
+						<a href="https://twitter.com/HL7Peru" target="_blank" rel="noopener noreferrer"><i
+								class="fab fa-twitter"></i></a>
+						<a href="https://www.instagram.com/hl7peru/" target="_blank" rel="noopener noreferrer"> <i
+								class="fab fa-instagram"></i></a>
+						<a href="https://www.linkedin.com/company/capitulo-hl7-peru/" target="_blank"
+							rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+
+
+					</div>
+				</div>
+
+				<div class="footer-col2">
+
+					<h4>Contáctenos</h4>
+					<ul>
+						<li><a> <i class="fas fa-map-marker-alt"></i> </a></li>
+						<li><a>Calle Simón Condori 286</a></li>
+						<li><a>Pueblo Libre</a></li>
+						<li><a>Lima, Perú</a></li> <br>
+						<li><a href="#"><i class="fas fa-phone"></i> (+51) 956194180 </a></li>
+						<br>
+						<li><a href="../es/contacto.html"><i class="fas fa-envelope"></i> presidencia@hl7peru.org</a>
+						</li>
+					</ul>
+
+				</div>
+
+			</div>
+
+			<p class="footer-text">© 2023 HL7 Perú <br> Website desarrollada por <a
+					href="https://www.linkedin.com/in/stypcanto/" target="_blank" rel="noopener noreferrer">SBRCR </a>
+			</p>
+
+		</div>
+	</footer>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

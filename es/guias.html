@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Expires" content="0">
+	<meta http-equiv="Last-Modified" content="0">
+	<meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
+	<meta http-equiv="Pragma" content="no-cache">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+		integrity="sha512-5mn5uSQn99jtE+po/4jG4tFj9Ir7UDNGFk1uq7qjJwd2hV7g48y30xuB7JVnRzXu75lEfb+f19lZ7wqKyiB2PQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+		integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+		<link rel="stylesheet" href="../es/css/normalize.css">
+		<link rel="stylesheet" href="../es/css/styleidiomas.css">
+		<link rel="stylesheet" href="../es/css/style.css">
+		<link rel="stylesheet" href="../es/css/computer.css" media="screen and (min-width: 1080px)">
+		<link rel="stylesheet" href="../es/css/tablet.css" media="screen and (max-width: 1079px) and (min-width: 768px)">
+		<link rel="stylesheet" href="../es/css/mobile-390.css" media="screen and (max-width: 767px) and (min-width: 321px)">
+		<link rel="stylesheet" href="../es/css/mobile-320.css" media="screen and (max-width: 320px)">
+		<link rel="stylesheet" href="../es/css/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="/enviar_correo.php" />
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+
+
+
+	<title>Nosotros</title>
+
+
+	<script>
+		window.addEventListener('DOMContentLoaded', (event) => {
+			const menuBtn = document.querySelector('.menu-toggle');
+			const menu = document.querySelector('.menu__items');
+
+			menuBtn.addEventListener('click', toggleMenu);
+
+			function toggleMenu() {
+				menuBtn.classList.toggle('active');
+				menu.classList.toggle('active');
+			}
+		});
+	</script>
+
+
+	<script>
+		window.addEventListener('scroll', function () {
+			var scrollToTopButton = document.getElementById("scroll-to-top");
+
+			if (window.scrollY > 200) {
+				scrollToTopButton.style.display = "block";
+			} else {
+				scrollToTopButton.style.display = "none";
+			}
+		});
+
+		window.onload = function () {
+			document.getElementById("scroll-to-top").addEventListener("click", function () {
+				document.body.scrollTop = 0;
+				document.documentElement.scrollTop = 0;
+			});
+		};
+	</script>
+
+	<script>
+		window.addEventListener('DOMContentLoaded', (event) => {
+			const dropdown = document.querySelector('.dropdown');
+			const dropdownContent = document.querySelector('.dropdown-content');
+
+			dropdown.addEventListener('click', toggleDropdown);
+			dropdown.addEventListener('mouseleave', closeDropdown);
+
+			function toggleDropdown() {
+				dropdownContent.classList.toggle('active');
+			}
+
+			function closeDropdown() {
+				dropdownContent.classList.remove('active');
+			}
+		});
+	</script>
+
+
+
+
+</head>
+
+
+
+
+<body>
+
+	<!--
+	<a id="whatsapp-button" href="https://api.whatsapp.com/send?phone=956194180" target="_blank">
+		<img src="img/boton whatsapp.png" alt="WhatsApp">
+	</a> -->
+
+
+
+	<a href="#" id="scroll-to-top" title="Ir arriba">
+		<i class="fas fa-arrow-up"></i>
+	</a>
+
+	<div class="cabeid">
+		<div class="fondo">
+			<div class="redesid">
+				<div class="redes-sociales">
+					<a href="https://www.linkedin.com/company/capitulo-hl7-peru/" target="_blank"
+						rel="noopener noreferrer"> <i class="fab fa-linkedin-in"></i></a>
+					<a href="https://twitter.com/HL7Peru" target="_blank" rel="noopener noreferrer"> <i
+							class="fab fa-twitter"></i></a>
+					<a href="https://www.facebook.com/capitulohl7peru" target="_blank" rel="noopener noreferrer"> <i
+							class="fab fa-facebook"></i></a>
+					<a href="https://www.instagram.com/hl7peru/" style="font-size:21px" target="_blank"
+						rel="noopener noreferrer"> <i class="fab fa-instagram"></i></a>
+
+				</div>
+				<a href="https://hl7peru.org/webmail" target="_blank" rel="noopener noreferrer" class="login-button">
+					<i class="fas fa-user"></i> Iniciar sesión
+				</a>
+			</div>
+		</div>
+	</div>
+
+
+	<header>
+
+
+		<div class="header__logo-container">
+			<div id="sideNavigation" class="menu-toggle">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+
+			<a href="index.html">
+				<img class="header__logo" src="img/HL7_International_RGB_Peru.jpg" alt="Logotipo">
+			</a>
+
+
+			<nav class="menu">
+
+				<div class="menu__items">
+					<ul>
+						<li><a href="index.html">Inicio</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropbtn">Nosotros <i class="fas fa-chevron-down"></i></a>
+							<div class="dropdown-content">
+								<a href="../es/nosotros.html">Sobre nosotros</a>
+
+								<a href="../es/directorio.html">Equipo directivo</a>
+								<a href="../es/aliados.html">Aliados estratégicos</a>
+								<a href="../es/membresias.html">Programa de membresías</a>
+								<a href="../es/comunidad.html">Comunidad</a>
+							</div>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropbtn">Nuestro trabajo <i class="fas fa-chevron-down"></i></a>
+							<div class="dropdown-content">
+								<a href="../es/blog.html">Blog</a>
+								<a href="../es/eventos.html">Eventos</a>
+								<a href="../es/webiners.html">Webiners</a>
+							</div>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropbtn">Recursos<i class="fas fa-chevron-down"></i></a>
+							<div class="dropdown-content">
+								<a href="../es/acercahl7.html">Acerca de HL7</a>
+								<a href="../es/estandares.html">Estándares</a>
+								<a href="../es/guias.html">Guías</a>
+								<a href="../es/sitiosinteres.html">Sitios de interés</a>
+							</div>
+						</li>
+						<li><a href="../es/contacto.html">Contacto</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropbtn">Idiomas <i class="fas fa-chevron-down"></i></a>
+							<div class="dropdown-content">
+								<a href="../en/index_en.html"><img src="img/en.png" alt=""
+										style="width: 21px; height: 14px;"> Inglés</a>
+								<a href="../es/index.html"><img src="img/es.jpg" alt=""
+										style="width: 21px; height: 14px;"> Español</a>
+							</div>
+						</li>
+						<li class="search-li">
+							<div class="search-box">
+								<input type="text" placeholder="Buscar">
+								<button type="submit"><i class="fas fa-search"></i></button>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</header>
+
+
+
+	<main>
+
+		<section class="hero-banner1">
+
+			<div class="banner-content">
+				<h1>Guias técnicas </h1>
+
+			</div>
+		</section>
+
+
+
+	
+
+
+
+
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+
+
+
+
+					<div class="footer-col  primer_footer">
+						<h4>Sobre HL7 Perú</h4>
+						<ul>
+							<li><a href="../es/nosotros.html">Sobre nosotros</a></li>
+	
+							<li><a href="../es/directorio.html">Equipo directivo</a></li>
+							<li><a href="../es/aliados.html">Aliados estratégicos</a></li>
+							<li><a href="../es/membresias.html">Programa de membresía</a></li>
+						</ul>
+					</div>
+					<div class="footer-col">
+						<h4>Nuestro trabajo</h4>
+						<ul>
+							<li><a href="../es/blog.html">Blog</a></li>
+							<li><a href="../es/eventos.html">Eventos</a></li>
+							<li><a href="../es/webiners.html">Webiners</a></li>
+	
+						</ul>
+					</div>
+					<div class="footer-col">
+						<h4>Idiomas</h4>
+						<ul>
+							<li><a href="../es/contacto.html">Español</a></li>
+							<li><a href="../en/contacto.html">Inglés</a></li>
+
+						</ul>
+					</div>
+					<div class="footer-col">
+						<h4>Síguenos</h4>
+						<br>
+						<div class="social-links">
+							<a href="https://www.facebook.com/capitulohl7peru" target="_blank"
+								rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+							<a href="https://twitter.com/HL7Peru" target="_blank" rel="noopener noreferrer"><i
+									class="fab fa-twitter"></i></a>
+							<a href="https://www.instagram.com/hl7peru/" target="_blank" rel="noopener noreferrer"> <i
+									class="fab fa-instagram"></i></a>
+							<a href="https://www.linkedin.com/company/capitulo-hl7-peru/" target="_blank"
+								rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+
+
+						</div>
+					</div>
+
+					<div class="footer-col2">
+
+						<h4>Contáctenos</h4>
+						<ul> <br>
+							<li><a> <i class="fas fa-map-marker-alt"></i> </a></li>
+							<li><a>Calle Simón Condori 286</a></li>
+							<li><a>Pueblo Libre</a></li>
+							<li><a>Lima, Perú</a></li> <br>
+							<li><a href="#"><i class="fas fa-phone"></i> (+51) 956194180 </a></li>
+							<br>
+							<li><a href="#"><i class="fas fa-envelope"></i> contacto@hl7peru.org</a></li>
+						</ul>
+
+					</div>
+
+				</div>
+
+				<p class="footer-text">© 2023 HL7 Perú <br> Website desarrollada por <a
+						href="https://www.linkedin.com/in/stypcanto/" target="_blank" rel="noopener noreferrer">SBRCR
+					</a>
+				</p>
+
+			</div>
+		</footer>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

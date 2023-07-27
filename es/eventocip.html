@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Last-Modified" content="0">
+    <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-5mn5uSQn99jtE+po/4jG4tFj9Ir7UDNGFk1uq7qjJwd2hV7g48y30xuB7JVnRzXu75lEfb+f19lZ7wqKyiB2PQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="../es/css/normalize.css">
+    <link rel="stylesheet" href="../es/css/styleidiomas.css">
+    <link rel="stylesheet" href="../es/css/style.css">
+    <link rel="stylesheet" href="../es/css/computer.css" media="screen and (min-width: 1080px)">
+    <link rel="stylesheet" href="../es/css/tablet.css" media="screen and (max-width: 1079px) and (min-width: 768px)">
+    <link rel="stylesheet" href="../es/css/mobile-390.css" media="screen and (max-width: 767px) and (min-width: 321px)">
+    <link rel="stylesheet" href="../es/css/mobile-320.css" media="screen and (max-width: 320px)">
+    <link rel="stylesheet" href="../es/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/enviar_correo.php" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+
+
+
+    <title>Simposio</title>
+
+
+    <script>
+        window.addEventListener('DOMContentLoaded', (event) => {
+            const menuBtn = document.querySelector('.menu-toggle');
+            const menu = document.querySelector('.menu__items');
+
+            menuBtn.addEventListener('click', toggleMenu);
+
+            function toggleMenu() {
+                menuBtn.classList.toggle('active');
+                menu.classList.toggle('active');
+            }
+        });
+    </script>
+
+
+    <script>
+        window.addEventListener('scroll', function () {
+            var scrollToTopButton = document.getElementById("scroll-to-top");
+
+            if (window.scrollY > 200) {
+                scrollToTopButton.style.display = "block";
+            } else {
+                scrollToTopButton.style.display = "none";
+            }
+        });
+
+        window.onload = function () {
+            document.getElementById("scroll-to-top").addEventListener("click", function () {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            });
+        };
+    </script>
+
+    <script>
+        window.addEventListener('DOMContentLoaded', (event) => {
+            const dropdown = document.querySelector('.dropdown');
+            const dropdownContent = document.querySelector('.dropdown-content');
+
+            dropdown.addEventListener('click', toggleDropdown);
+            dropdown.addEventListener('mouseleave', closeDropdown);
+
+            function toggleDropdown() {
+                dropdownContent.classList.toggle('active');
+            }
+
+            function closeDropdown() {
+                dropdownContent.classList.remove('active');
+            }
+        });
+    </script>
+
+
+
+
+</head>
+
+
+
+
+<body>
+
+    <!--
+	<a id="whatsapp-button" href="https://api.whatsapp.com/send?phone=956194180" target="_blank">
+		<img src="img/boton whatsapp.png" alt="WhatsApp">
+	</a> -->
+
+
+
+    <a href="#" id="scroll-to-top" title="Ir arriba">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <div class="cabeid">
+        <div class="fondo">
+            <div class="redesid">
+                <div class="redes-sociales">
+                    <a href="https://www.linkedin.com/company/capitulo-hl7-peru/" target="_blank"
+                        rel="noopener noreferrer"> <i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://twitter.com/HL7Peru" target="_blank" rel="noopener noreferrer"> <i
+                            class="fab fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/capitulohl7peru" target="_blank" rel="noopener noreferrer"> <i
+                            class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/hl7peru/" style="font-size:21px" target="_blank"
+                        rel="noopener noreferrer"> <i class="fab fa-instagram"></i></a>
+
+                </div>
+                <a href="https://hl7peru.org/webmail" target="_blank" rel="noopener noreferrer" class="login-button">
+                    <i class="fas fa-user"></i> Iniciar sesión
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <header>
+
+
+        <div class="header__logo-container">
+            <div id="sideNavigation" class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <a href="index.html">
+                <img class="header__logo" src="img/HL7_International_RGB_Peru.jpg" alt="Logotipo">
+            </a>
+
+
+            <nav class="menu">
+
+                <div class="menu__items">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropbtn">Nosotros <i class="fas fa-chevron-down"></i></a>
+                            <div class="dropdown-content">
+                                <a href="../es/nosotros.html">Sobre nosotros</a>
+
+                                <a href="../es/directorio.html">Equipo directivo</a>
+                                <a href="../es/aliados.html">Aliados estratégicos</a>
+                                <a href="../es/membresias.html">Programa de membresías</a>
+                                <a href="../es/comunidad.html">Comunidad</a>
+                            </div>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropbtn">Nuestro trabajo <i class="fas fa-chevron-down"></i></a>
+                            <div class="dropdown-content">
+                                <a href="../es/blog.html">Blog</a>
+                                <a href="../es/eventos.html">Eventos</a>
+                                <a href="../es/webiners.html">Webiners</a>
+                            </div>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropbtn">Recursos<i class="fas fa-chevron-down"></i></a>
+                            <div class="dropdown-content">
+                                <a href="../es/acercahl7.html">Acerca de HL7</a>
+                                <a href="../es/estandares.html">Estándares</a>
+                                <a href="../es/guias.html">Guías</a>
+                                <a href="../es/sitiosinteres.html">Sitios de interés</a>
+                            </div>
+                        </li>
+                        <li><a href="../es/contacto.html">Contacto</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropbtn">Idiomas <i class="fas fa-chevron-down"></i></a>
+                            <div class="dropdown-content">
+                                <a href="../en/index_en.html"><img src="img/en.png" alt=""
+                                        style="width: 21px; height: 14px;"> Inglés</a>
+                                <a href="../es/index.html"><img src="img/es.jpg" alt=""
+                                        style="width: 21px; height: 14px;"> Español</a>
+                            </div>
+                        </li>
+                        <li class="search-li">
+                            <div class="search-box">
+                                <input type="text" placeholder="Buscar">
+                                <button type="submit"><i class="fas fa-search"></i></button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+
+    <main>
+
+        <section class="banner_eventoCIP">
+
+            <div class="banner-content">
+                <h1>Simposio Internacional </h1>
+                <h2 style="color: rgb(219, 154, 79);">Interoperabilidad en Salud Digital en el Sector Público y Privado
+                </h2>
+            </div>
+        </section>
+
+
+
+
+        <div class="estructura">
+
+            <div class="sectioncip">
+                <h2>Objetivos</h2>
+                <ol>
+                    <li>
+                        <p>Promover la importancia de la interoperabilidad en el ámbito de la salud.</p>
+                    </li>
+                    <li>
+                        <p>Compartir experiencias y buenas prácticas en la implementación de estándares de
+                            interoperabilidad.</p>
+                    </li>
+                    <li>
+                        <p>Analizar los desafíos y oportunidades de la interoperabilidad en el contexto de diferentes
+                            países.</p>
+                    </li>
+                    <li>
+                        <p>Establecer un espacio de networking y colaboración entre representantes del sector público y
+                            privado.</p>
+                    </li>
+                </ol>
+            </div>
+
+            <div class="sectioncip">
+                <h2>Justificación</h2>
+                <p>La interoperabilidad en el sector de la salud es fundamental para mejorar la calidad de la atención,
+                    la
+                    eficiencia en la gestión de datos y la toma de decisiones informadas.
+                </p>
+                <p>
+                    Este simposio internacional tiene como objetivo reunir a expertos y profesionales de diferentes
+                    países
+                    para intercambiar conocimientos y experiencias, fomentando la adopción de estándares de
+                    interoperabilidad y promoviendo la colaboración entre el sector público y privado. A través de las
+                    presentaciones magistrales, paneles de discusión y sesiones de preguntas, los participantes podrán
+                    obtener una visión amplia de los avances, desafíos y oportunidades en el campo de la
+                    interoperabilidad
+                    en salud.</p>
+
+            </div>
+
+            <div class="sectioncip2">
+                <h2>Presentación del evento</h2>
+            </div>
+
+
+            <div class="video-section">
+                <div class="video-container">
+                    <video src="../es/img/Promocion simposio.mp4" width="450" height="450" controls></video>
+                </div>
+                <div class="description">
+                    <p>En colaboración con HL7 Perú y el prestigioso Colegio de Ingenieros del Perú - CD Lima, estarán
+                        organizando un evento de gran relevancia dedicado a la #interoperabilidad en salud. 💪🔗</p>
+                    <p>Imaginen la emoción de participar en un encuentro donde se reunirán expertos nacionales e
+                        internacionales, todos ellos comprometidos con el impulso del estándar #HL7. 🌟🤝</p>
+                    <p>Este evento brindará una oportunidad excepcional para compartir ideas, aprender de los líderes
+                        del sector y establecer conexiones estratégicas en el ámbito de la salud digital. 🤝🚀</p>
+                </div>
+            </div>
+
+            <div class="sectioncip">
+                <h2>Ponentes</h2>
+                <div class="panelists">
+                    <div class="panelist">
+                        <div class="image-container">
+                            <img src="../es/img/hernan.jpeg" alt="Panelista 1">
+                        </div>
+                        <h2>Hernán Porras Gamarra</h2>
+                        <h3>Healthcare IT Consultant</h3>
+                        <p>egresado de la universidad Nacional Federico Villarreal con más de 10 años de experiencia en
+                            el sector público y privado, de los cuales 4 años trabajó en el sector salud en España,
+                            principalmente en el sector público, Actualmente se desempeña como Consultor Senior TI para
+                            Salud y Arquitecto de Soluciones. Cuenta con la certificación internacional HL7 v2.</p>
+                    </div>
+                    <div class="panelist">
+                        <div class="image-container">
+                            <img src="../es/img/diegokaminker.jpeg" alt="Panelista 2">
+                        </div>
+                        <h2>Diego Kaminker</h2>
+                        <h3>Deputy Chief Standards Implementation Officer de HL7 Internacional</h3>
+                        <p>Es Fellow de HL7 y de IMIA. Miembro del directorio de HL7 Argentina y del education advisory
+                            council de HL7 Internacional. Fue director de afiliados por muchos años y ha definido,
+                            implementado y mantenido cientos de proyectos de interoperabilidad en salud utilizando los
+                            principales estándares de HL7 (V2.x, CDA R2 y FHIR).
+                            Ha creado y supervisa los Cursos Fundamentales e intermedios de HL7 y FHIR, con más de 7,000
+                            estudiantes capacitados en estándares de HL7 en todo el mundo en los últimos 15 años y ha
+                            participado activamente en las definiciones para la Red Nacional de Salud Digital de
+                            Argentina basada en FHIR y muchas guías de implementación de alcance regional y nacional en
+                            Latinoamérica.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Agrega más panelistas según sea necesario -->
+
+
+
+
+            <div class="sectioncip">
+                <h2>Panelistas Nacionales</h2>
+                <div class="panelists">
+                    <div class="panelist">
+                        <div class="image-container">
+                            <img src="../es/img/rossanav2.png" alt="Panelista 3">
+                        </div>
+                        <h2>Rossana Rivas Tarazona</h2>
+                        <h3>Co Chair & Founder Health Level Seven-HL7 Peru</h3>
+                        <p>MSc en Univ. Jean Moulin-Lyon III de Francia, con estudios doctorales completos en Ecole des
+                            Mines de Paris, Francia, estudios de Salud Pública en Univ. Catholique de Louvain, Bélgica,
+                            y estudios completos de Maestría en Administración en Univ. del Pacífico, con estudios de
+                            Maestría en Ciencias Políticas en Pontificia Univ. Católica del Perú. Miembro de la Comisión
+                            de Gestión de Tecnologías para la Salud del CIP, CDL Lima, Co Chair y Founder de Health
+                            Level Seven-HL7 Perú, Es Miembro del Consejo de la División de Ing. Clínica y es Miembro del
+                            Consejo de la División de Evaluación de Tecnología en Salud de IFMBE, Miembro de la Red de
+                            Evaluación de Tecnología-RedETSA de Pan American Health Organization; Miembro del Grupo de
+                            Discusión Latinoamericano de Ing. Clínica-GDIC; Prof., Investigador y Consultor
+                            Internacional en Ing. Biomédica, Ing. Clínica y Evaluación de Tecnología en Salud.</p>
+
+
+
+
+                    </div>
+                    <div class="panelist">
+                        <div class="image-container">
+                            <img src="../es/img/ulises.jpeg" alt="Panelista 2">
+                        </div>
+                        <h2>Ulises Contreras</h2>
+                        <h3>Gerente de la Gerencia de Sistemas e Información Tecnológica de ESSALUD</h3>
+                        <p>Ingeniero Informático de la Pontificia Universidad Católica del Perú, con mas de 20 años de
+                            experiencia en el sector público y privado, de los cuales 8 años en el sector salud,
+                            Actualmente se desempeña como Gerente de Sistemas e Innovación Tecnológica de la Gerencia
+                            Central de Tecnologias de la Información y Comunicaciones de EsSalud. Cuenta con un
+                            Diplomado en Informática Biomédica de la Universidad Peruana Cayetano Heredia y concluyendo
+                            la Maestria de Ingenieria Biomédica en la Pontificia Universidad Católica del Perú.</p>
+                    </div>
+                    <div class="panelist">
+                        <div class="image-container">
+                            <img src="../es/img/miguelgu.jpeg" alt="Panelista 2">
+                        </div>
+                        <h2>Miguel Gutiérrez</h2>
+                        <h3>Director General de la Oficina de Tecnologías de la Información</h3>
+                        <h4>Ministerio de Salud de Perú</h4>
+                        <p>Ingeniero de Sistemas, Especialista en Tecnologías de información de la Universidad ESAN,
+                            Magister en Gerencia de Proyectos Empresariales de la Universidad Federico Villareal;
+                            Coordinador de la Unidad de Tecnologías de la información y Estadística del Hospital de
+                            Emergencias Villa el Salvador Desde el 2016 hasta el 2019; Coordinador del Componente 3 en
+                            PCRIS “Mejoramiento y Ampliación del Sistema Único de Información en Salud” y Especialista
+                            en Tecnologías de la Información del Comando COVID del Ministerio de Salud. En el 2020
+                            director general de la Oficina General de Tecnología de la Información del Ministerio de
+                            Salud, 2021 al 2022 jefe de la Unidad de Tecnologías de la Información del Hospital de
+                            Emergencias Villa El Salvador, actualmente llevando la Maestría Gestión Pública en la
+                            Universidad San Ignacio de Loyola y ocupando el Cargo de Director General de la Oficina
+                            General de Tecnologías de la información del Ministerio de Salud.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sectioncip">
+                <h2>Panelistas Internacionales</h2>
+                <div class="panelists">
+                    <div class="panelist">
+                        <div class="image-container">
+                            <img src="../es/img/styp.png" alt="Panelista 1">
+                        </div>
+                        <h2>Styp Canto Rondón</h2>
+                        <h3>Chair HL7 Perú</h3>
+                        <p>Presidente y miembro fundado del Directorio HL7 Peru, Ingeniero de Telecomunicaciones con más
+                            de 12 años de experiencia, 8 de ellos en el campo de la salud digital.
+
+                            Impulsor de Transformación Digital, eHealth, Interoperabilidad, Inteligencia Artificial,
+                            Telemedicina.
+
+                            Miembro vocal de la Organización Internacional de Telemedicina y Telesalud, Miembro de la
+                            Comisión de Gestión de Tecnologías para la Salud del Colegio de Ingenieros de Perú. Miembro
+                            investigador de Calidad de Servicios de Telesalud en América Latina en la Universidad
+                            Federal Minas Gerais de Brasil</p>
+                    </div>
+                    <div class="panelist">
+                        <div class="image-container">
+                            <img src="../es/img/mario.png" alt="Panelista 2">
+                        </div>
+                        <h2>Mario Enrique Cortés</h2>
+                        <h3>Chair HL7 Colombia</h3>
+
+                        <p>Consultor senior internacional en interoperabilidad en salud y uso de estándares HL7.
+                            Ingeniero Industrial y emprendedor con más de veinte años de experiencia en la industria
+                            informática en salud.
+                            Premio Joachim Dudeck, concedido durante la Conferencia Internacional de Interoperabilidad
+                            HL7 (IHIC) 2011.</p>
+                    </div>
+
+                    <div class="panelist">
+                        <div class="image-container">
+                            <img src="../es/img/guille.png" alt="Panelista 2">
+                        </div>
+                        <h2>Guilherme Zwicker Rocha</h2>
+                        <h3>Chair HL7 Brasil</h3>
+                        <p>Presidente de HL7 Brasil y CMIO (Chief Medical Informatics Officer) de la empresa brasileña
+                            de tecnología CTC, médico, trabaja con informática en salud y la incorporación de nuevas
+                            tecnologías.
+                            Adelante como Presidente y Director Ejecutivo de la Afiliada HL7 Brasil desde 2018.
+                            Como médico especialista en salud digital, trabaja con sintaxis digital (HL7 FHIR) y
+                            terminologías controladas para el área de la salud (CID, LOINC, SNOMED), con enfoque de
+                            adopción nacional.</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="headercip">
+                <h1>Programa del Evento</h1>
+            </div>
+
+
+
+
+            <div class="sectioncip">
+
+                <table class="event-table">
+                    <thead>
+                        <tr>
+                            <th>Hora</th>
+                            <th>Concepto</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>07:00 pm</td>
+                            <td>Apertura y preámbulo del Simposio Internacional<br>Ing. CIP Jorge Cueva
+                                Nolberto<br>Director Secretario del Consejo Departamental de Lima CIP</td>
+                        </tr>
+                        <tr>
+                            <td>07:05 pm</td>
+                            <td>Palabras de bienvenida<br>Ing. CIP Styp Canto<br>Miembro Comisión de Gestión de
+                                Tecnología para la Salud del CD Lima CIP y Chair HL7 Perú</td>
+                        </tr>
+                        <tr>
+                            <td>07:10 pm</td>
+                            <td>Presentación del primer expositor, a cargo del moderador del evento, Ing. CIP Henry
+                                García</td>
+                        </tr>
+                        <tr>
+                            <td>07:15 pm</td>
+                            <td>Primera Exposición:<br>Ing. Hernán Porras Gamarra<br>Business & Integration Architecture
+                                Team Lead at Accenture España.<br>Tema: La implementación y desafíos de HL7 FHIR en el
+                                sector sanitario en España</td>
+                        </tr>
+                        <tr>
+                            <td>07:40 pm</td>
+                            <td>Presentación del primer panel, a cargo del moderador del evento, Ing. CIP Henry García
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>07:45 pm</td>
+                            <td>Primer Panel de Análisis:<br>Desafíos y oportunidades de la interoperabilidad en el
+                                Perú<br>Participantes:<br>1. Mg. Rossana Rivas, Miembro Comisión de Gestión de
+                                Tecnología para la Salud del CD Lima CIP y Co Chair HL7 Perú<br>2. Ing. Ulises
+                                Contreras, Gerente de la Gerencia de Sistemas e Información Tecnológica, Es Salud<br>3.
+                                Ing. Miguel Gutiérrez, Miembro Comisión de Gestión de Tecnología para la Salud del CD
+                                Lima CIP</td>
+                        </tr>
+                        <tr>
+                            <td>08:05 pm</td>
+                            <td>Preguntas a los panelistas, a cargo del moderador, Ing. CIP Henry García</td>
+                        </tr>
+                        <tr>
+                            <td>08:15 pm</td>
+                            <td>Presentación del segundo expositor, a cargo del moderador del evento, Ing. CIP Henry
+                                García</td>
+                        </tr>
+                        <tr>
+                            <td>08:20 pm</td>
+                            <td>Segunda Exposición:<br>Diego Kaminker<br>Co-Chair de HL7 International Council<br>Tema:
+                                Panorama Regional de Estándares de Informática en Salud</td>
+                        </tr>
+                        <tr>
+                            <td>8:45 pm</td>
+                            <td>Presentación del segundo panel, a cargo del moderador del evento, Ing. CIP Henry García
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>8:50 pm</td>
+                            <td>Segundo Panel de Análisis:<br>Avances y desafíos en la interoperabilidad de los sistemas
+                                de salud de Latinoamérica: Experiencias y lecciones aprendidas<br>Participantes:<br>1.
+                                Ing. CIP Styp Canto, Miembro Comisión de Gestión de Tecnología para la Salud del CD Lima
+                                CIP y Chair HL7 Perú<br>2. Ing. Mario Mario Enrique Cortés, Chair HL7 Colombia<br>3.
+                                Ing. Guillerme Zwicker, Chair HL7 Brasil</td>
+                        </tr>
+                        <tr>
+                            <td>9:10 pm</td>
+                            <td>Preguntas a los panelistas, a cargo del moderador, Ing. CIP Henry García</td>
+                        </tr>
+                        <tr>
+                            <td>9:20 pm</td>
+                            <td>Conclusiones y Palabras de Cierre del Evento<br>Ing. CIP René Mitma
+                                Ramírez<br>Presidente de la Comisión de Gestión de Tecnología para la Salud del CD Lima
+                                CIP</td>
+                        </tr>
+                        <tr>
+                            <td>9:30 pm</td>
+                            <td>Coffee Break</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+
+
+            <div class="sectioncip2">
+                <h2 style="text-align: center">Transmisión Online a través de la página web del CIP</h2>
+                <img src="../es/img/transmision.png" alt="Evento Online">
+                <p>Habrá una transmisión online en vivo para el evento.</p>
+                <button type="button">
+                    <a href="https://www.facebook.com/ciplimaoficial">Ir a la transmisión</a>
+                  </button>
+
+              </div>
+
+
+            <div class="sectioncip">
+                <section class="form-section">
+                    <h2>Regístrate para ser parte de la Comunidad HL7 Perú</h2>
+                    <form action="procesar.php" method="POST">
+                        <div class="form-group">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="apellidos">Apellidos:</label>
+                            <input type="text" id="apellidos" name="apellidos" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="correo">Correo electrónico:</label>
+                            <input type="email" id="correo" name="correo" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="telefono">Teléfono:</label>
+                            <input type="tel" id="telefono" name="telefono" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="institucion">Institución laboral:</label>
+                            <input type="text" id="institucion" name="institucion" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="cargo">Puesto de trabajo:</label>
+                            <input type="text" id="cargo" name="cargo" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>¿Le gustaría recibir notificaciones a su correo electrónico y al whatsapp de las actividades de HL7 Perú que estaremos realizando?</label>
+                            <div>
+                                <input type="radio" id="si" name="notificaciones" value="si" required>
+                                <label for="si">Sí</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="no" name="notificaciones" value="no" required>
+                                <label for="no">No</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="submit" value="Registrarse">
+                        </div>
+                    </form>
+                </section>
+            </div>
+
+
+        </div>
+
+
+
+
+        
+
+
+
+
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+
+
+
+
+                    <div class="footer-col  primer_footer">
+                        <h4>Sobre HL7 Perú</h4>
+                        <ul>
+                            <li><a href="../es/nosotros.html">Sobre nosotros</a></li>
+
+                            <li><a href="../es/directorio.html">Equipo directivo</a></li>
+                            <li><a href="../es/aliados.html">Aliados estratégicos</a></li>
+                            <li><a href="../es/membresias.html">Programa de membresía</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Nuestro trabajo</h4>
+                        <ul>
+                            <li><a href="../es/blog.html">Blog</a></li>
+                            <li><a href="../es/eventos.html">Eventos</a></li>
+                            <li><a href="../es/webiners.html">Webiners</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Idiomas</h4>
+                        <ul>
+                            <li><a href="../es/contacto.html">Español</a></li>
+                            <li><a href="../en/contacto.html">Inglés</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Síguenos</h4>
+                        <br>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/capitulohl7peru" target="_blank"
+                                rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://twitter.com/HL7Peru" target="_blank" rel="noopener noreferrer"><i
+                                    class="fab fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/hl7peru/" target="_blank" rel="noopener noreferrer"> <i
+                                    class="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/company/capitulo-hl7-peru/" target="_blank"
+                                rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+
+
+                        </div>
+                    </div>
+
+                    <div class="footer-col2">
+
+                        <h4>Contáctenos</h4>
+                        <ul> <br>
+                            <li><a> <i class="fas fa-map-marker-alt"></i> </a></li>
+                            <li><a>Calle Simón Condori 286</a></li>
+                            <li><a>Pueblo Libre</a></li>
+                            <li><a>Lima, Perú</a></li> <br>
+                            <li><a href="#"><i class="fas fa-phone"></i> (+51) 956194180 </a></li>
+                            <br>
+                            <li><a href="#"><i class="fas fa-envelope"></i> contacto@hl7peru.org</a></li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+                <p class="footer-text">© 2023 HL7 Perú <br> Website desarrollada por <a
+                        href="https://www.linkedin.com/in/stypcanto/" target="_blank" rel="noopener noreferrer">SBRCR
+                    </a>
+                </p>
+
+            </div>
+        </footer>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

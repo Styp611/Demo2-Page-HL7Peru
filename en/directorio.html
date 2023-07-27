@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Expires" content="0">
+	<meta http-equiv="Last-Modified" content="0">
+	<meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
+	<meta http-equiv="Pragma" content="no-cache">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+		integrity="sha512-5mn5uSQn99jtE+po/4jG4tFj9Ir7UDNGFk1uq7qjJwd2hV7g48y30xuB7JVnRzXu75lEfb+f19lZ7wqKyiB2PQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+		integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+		<link rel="stylesheet" href="../es/css/normalize.css">
+		<link rel="stylesheet" href="../es/css/styleidiomas.css">
+		<link rel="stylesheet" href="../es/css/style.css">
+		<link rel="stylesheet" href="../es/css/computer.css" media="screen and (min-width: 1080px)">
+		<link rel="stylesheet" href="../es/css/tablet.css" media="screen and (max-width: 1079px) and (min-width: 768px)">
+		<link rel="stylesheet" href="../es/css/mobile-390.css" media="screen and (max-width: 767px) and (min-width: 321px)">
+		<link rel="stylesheet" href="../es/css/mobile-320.css" media="screen and (max-width: 320px)">
+		<link rel="stylesheet" href="../es/css/swiper-bundle.min.css" />
+
+
+	<title>Board of Directors</title>
+
+
+	<script>
+		window.addEventListener('DOMContentLoaded', (event) => {
+			const menuBtn = document.querySelector('.menu-toggle');
+			const menu = document.querySelector('.menu__items');
+
+			menuBtn.addEventListener('click', toggleMenu);
+
+			function toggleMenu() {
+				menuBtn.classList.toggle('active');
+				menu.classList.toggle('active');
+			}
+		});
+	</script>
+
+
+	<script>
+		window.addEventListener('scroll', function () {
+			var scrollToTopButton = document.getElementById("scroll-to-top");
+
+			if (window.scrollY > 200) {
+				scrollToTopButton.style.display = "block";
+			} else {
+				scrollToTopButton.style.display = "none";
+			}
+		});
+
+		window.onload = function () {
+			document.getElementById("scroll-to-top").addEventListener("click", function () {
+				document.body.scrollTop = 0;
+				document.documentElement.scrollTop = 0;
+			});
+		};
+	</script>
+
+	<script>
+		window.addEventListener('DOMContentLoaded', (event) => {
+			const dropdown = document.querySelector('.dropdown');
+			const dropdownContent = document.querySelector('.dropdown-content');
+
+			dropdown.addEventListener('click', toggleDropdown);
+			dropdown.addEventListener('mouseleave', closeDropdown);
+
+			function toggleDropdown() {
+				dropdownContent.classList.toggle('active');
+			}
+
+			function closeDropdown() {
+				dropdownContent.classList.remove('active');
+			}
+		});
+	</script>
+
+
+
+
+</head>
+
+<body>
+
+
+	<!--
+	<a id="whatsapp-button" href="https://api.whatsapp.com/send?phone=956194180" target="_blank">
+		<img src="img/boton whatsapp.png" alt="WhatsApp">
+	</a> -->
+
+
+
+	<a href="#" id="scroll-to-top" title="Ir arriba">
+		<i class="fas fa-arrow-up"></i>
+	</a>
+
+	<div class="cabeid">
+		<div class="fondo">
+			<div class="redesid">
+				<div class="redes-sociales">
+					<a href="https://www.linkedin.com/company/capitulo-hl7-peru/" target="_blank"
+						rel="noopener noreferrer"> <i class="fab fa-linkedin-in"></i></a>
+					<a href="https://twitter.com/HL7Peru" target="_blank" rel="noopener noreferrer"> <i
+							class="fab fa-twitter"></i></a>
+					<a href="https://www.facebook.com/capitulohl7peru" target="_blank" rel="noopener noreferrer"> <i
+							class="fab fa-facebook"></i></a>
+					<a href="https://www.instagram.com/hl7peru/" style="font-size:21px" target="_blank"
+						rel="noopener noreferrer"> <i class="fab fa-instagram"></i></a>
+
+				</div>
+				<a href="https://hl7peru.org/webmail" target="_blank" rel="noopener noreferrer" class="login-button">
+					<i class="fas fa-user"></i> Login
+				</a>
+			</div>
+		</div>
+	</div>
+
+
+	<header>
+
+
+		<div class="header__logo-container">
+			<div id="sideNavigation" class="menu-toggle">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+
+			<a href="../en/index_en.html">
+				<img class="header__logo" src="../es/img/HL7_International_RGB_Peru.jpg" alt="HL7 Perú">
+			</a>
+
+
+			<nav class="menu">
+
+				<div class="menu__items">
+					<ul>
+						<li><a href="../en/index_en.html">Home</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropbtn">About us <i class="fas fa-chevron-down"></i></a>
+							<div class="dropdown-content">
+								<a href="../en/nosotros.html">More about us</a>
+								<a href="../en/directorio.html">Management team</a>
+								<a href="../en/aliados.html">Strategic allies</a>
+								<a href="../en/membresias.html">Membership Program</a>
+								<a href="../en/comunidad.html">Community</a>
+							</div>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropbtn">Our work <i class="fas fa-chevron-down"></i></a>
+							<div class="dropdown-content">
+								<a href="../en/blog.html">Blog</a>
+								<a href="../en/eventos.html">Events</a>
+								<a href="../en/webiners.html">Webiners</a>
+							</div>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropbtn">Resources<i class="fas fa-chevron-down"></i></a>
+							<div class="dropdown-content">
+								<a href="../en/acercahl7.html">About HL7</a>
+								<a href="../en/estandares.html">Standards</a>
+								<a href="../en/guias.html">Guides</a>
+								<a href="../en/sitiosinteres.html">Places of interest</a>
+							</div>
+						</li>
+						<li><a href="../en/contacto.html">Contact</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropbtn">Languages<i class="fas fa-chevron-down"></i></a>
+							<div class="dropdown-content">
+								<a href="../en/index_en.html"><img src="../es/img/en.png" alt=""
+										style="width: 21px; height: 14px;"> English</a>
+								<a href="../es/index.html"><img src="../es/img/es.jpg" alt=""
+										style="width: 21px; height: 14px;"> Spanish</a>
+							</div>
+						</li>
+						<li class="search-li">
+							<div class="search-box">
+								<input type="text" placeholder="Search">
+								<button type="submit"><i class="fas fa-search"></i></button>
+							</div>
+						</li>
+					</ul>
+				</div>
+
+			</nav>
+		</div>
+	</header>
+
+
+
+
+	<main>
+
+
+		<section class="hero-banner">
+
+			<div class="banner-content">
+				<h1>HL7 Peru Directive </h1>
+				<p>Period 2023 - 2027</p>
+			</div>
+		</section>
+
+
+		<section>
+			<div class="wrapper">
+				<div class="title">
+					<p class="p-lg fw-bold">Board of Directors</p>
+					<hr class="mb-4">
+				</div>
+			</div>
+		</section>
+
+
+		<section class="">
+			<div class="wrapper mb-4">
+				<p class="p-lg fw-bold"></p>
+				<p>In March 2023, HL7 International authorized the creation of this exciting association.
+					Ten visionary board members joined together to form the powerful Board of Trustees, charged with leading this institution for an exciting
+					to lead this institution for an exciting 4-year period. </p>
+				<p>HL7 Peru is ready to revolutionize the healthcare field and set new standards at the national and international level.
+					national and international level.</p>
+			</div>
+		</section>
+
+
+		<section>
+			<div class="wrapper mb-5">
+				<div class="subtitle mt-5 mb-4">Directory</div>
+				<div class="module-team">
+
+					<div class="module-team__wrapper1">
+						<div class="module-team__circle">
+							<img src="../es/img/directorio/foto_styp.jpeg" alt="">
+						</div>
+						<div class="module-team__copy2">
+
+							<h3 class="p-md">Styp Bill Roy Canto Rondón
+								<a href="https://www.linkedin.com/in/stypcanto/" target="_blank" class="linkedin-icon">
+									<img src="../es/img/linkedin.png" alt="LinkedIn Icon">
+								</a>
+							</h3>
+							<p class="p-sm mb-3">Chair</p>
+							<ul class="custom-list">
+								<li>Consultant in digital health innovation projects</li>
+								<li>Telecommunications Engineer by profession, with more than 12 years of experience, 8 of them in the field of e-Health.
+									of them in the field of digital health, vast specialization in the area of Telemedicine.
+									Telemedicine; elaboration and implementation of projects related to software development and installation of
+									software development and installation of computer, electronic and biomedical equipment.
+								</li>
+								<li>Technology driver related to Digital Transformation, eHealth,
+									Interoperability, Cloud Computing, Big Data, Data Intelligence, Artificial Intelligence, Telemedicine, Web
+									Telemedicine, Front-end and Back-end Web Development, web services, SOAP-REST
+									SOAP-REST, Content Management Systems, Telecommunications Networks, Mobile Communications, Information Security
+									Mobile Communications, Information Security, Project Management and Public Investment Projects.
+									Project Management. </li>
+								<li>Member of the Specialized Committee of Health Technologies of the Chapter of
+									Engineering
+									of the CD Lima-CIP.</li>
+								<li>Member of the International Organization of Telemedicine and Telehealth.</li>
+								<li>Courses and internships related to Telemedicine specialization topics in various
+									different
+									countries such as South Korea, Colombia, Mexico, Brazil and United Kingdom.</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="module-team__wrapper2">
+						<div class="module-team__circle">
+							<img src="../es/img/directorio/Rossana-Rivas-23-Oct-2022.png" alt="">
+						</div>
+						<div class="module-team__copy2">
+
+							<h3 class="p-md">Pilar Rossana Rivas Tarazona
+								<a href="https://www.linkedin.com/in/rossana-rivas-tarazona-a936aa3/" target="_blank"
+									class="linkedin-icon">
+									<img src="../es/img/linkedin.png" alt="LinkedIn Icon">
+								</a>
+							</h3>
+
+							<p class="p-sm mb-3">Co-chair</p>
+							<ul class="custom-list">
+								<li>MSc Management, Direction, Organization and Strategy-Univ.Jean-Moulin-Lyon-III,
+									FRANCE; full doctoral studies in Health Innovation-Ecole des Mines de Paris, FRANCE; Diploma in Health Sciences
+									Paris, FRANCE; Diploma of Specialization in Health Sciences-Université Catholique de Louvain-BÉLVIN-III, FRANCE; full doctoral studies in
+									Catholique de Louvain-BELGIUM; 15 years in Biomedical Eng.
+									Technology Assessment and Digital Health with use of medical devices. Professor and
+									Researcher.</li>
+								<li>Consultant at World Health Organization-WHO Collaborating Center for HTM, UVM, USA.
+									International Consultant in Biomedical Engineering, Clinical Engineering, Technology Assessment and Digital Health
+									Digital Health with use of medical devices.</li>
+								<li>Elected Board de Clinical Engineering Division y Health Technology Assessment
+									Division de International Federation of Medical & Biological Engineering-IFMBE, USA;
+									Board de Health Technology Assessment for the Americas-RedETSA, Panamerican Health
+									Organization-PAHO,USA; Member: American College of Clinical Engineering-ACCE, USA.
+								</li>
+								<li>Member of the Specialized Committee on Health Technologies; Electronic Engineering Chapter of CD Lima-CIP, PERU.
+									Electronics Chapter of CD Lima-CIP, PERU.</li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+				<div class="module-team-two">
+
+					<div class="module-team__wrapper3">
+						<div class="module-team__circle-2">
+							<img src="../es/img/directorio/gabriel.jpg" alt="">
+						</div>
+						<div class="module-team__copy3">
+							<h3 class="p-md">Gabriel Augusto Castro Ormeño
+								<a href="https://www.linkedin.com/in/gcastroo/" target="_blank" class="linkedin-icon">
+									<img src="../es/img/linkedin.png" alt="LinkedIn Icon">
+								</a>
+							</h3>
+
+							<p class="mb-3">Secretary .</p>
+							<ul class="custom-list2">
+								<li>Medical Surgeon and Business Administrator(e)</li>
+								<li>Graduate of the Master's Degrees in Teaching and Research in Health and Occupational and Environmental Medicine.
+									Occupational and Environmental Medicine.</li>
+								<li>Diploma in Quality in Health, Occupational Health and Health Services Auditing.
+									Audit of Health Services.</li>
+								<li>Studies in agile project management and data science.</li>
+								<li>Professor of Human Medicine at the Universidad Científica del Sur (UCSUR).</li>
+								<li>Physician at the National Center of Occupational Health and Environmental Protection for Health (CENSOPAS) at the National Institute of Health of Peru (INS-PERU).
+									Health (CENSOPAS) at the National Institute of Health of Peru (INS-PERU)./li>
+								<li>Former President of the Committee of Information and Communication Technologies in Health (TICS) of the Peruvian Medical
+									Health (TICS) of the Medical College of Peru (CMP) Regional Council III- Lima..</li>
+								<li>Founding Member of the Health Quality Association of Peru (ASOCALP).</li>
+								<li>Invited expert member of the Health Technology Management Commission of the College of Engineers of Peru (CIP), Lima Departmental Council.
+									of the College of Engineers of Peru (CIP), Lima Departmental Council.</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="module-team__wrapper3">
+						<div class="module-team__circle-2">
+							<img src="../es/img/directorio/sebastian.jpg" alt="">
+						</div>
+						<div class="module-team__copy3">
+							<h3 class="p-md">José Sebastián Ibarra Arregui
+								<a href="https://www.linkedin.com/in/sebastian-ibarra-arregui/" target="_blank"
+									class="linkedin-icon">
+									<img src="../es/img/linkedin.png" alt="LinkedIn Icon">
+								</a>
+							</h3>
+
+
+							<p class="mb-3">Treasurer</p>
+							<ul class="custom-list2">
+								<li>Graduated in Biomedical Engineering at Pontificia Universidad Católica del Perú (PUCP) and Universidad Peruana Cayetano Heredia (UPCH).</li>
+								<li>Trainee Technical in the area of Education and Clinical Applications at Siemens
+									Healthineers Peru.</li>
+								<li>Researcher and associate thesis student in the Rural Telecommunications Group - GTR PUCP.
+									GTR PUCP. Research on Telehealth and Rural Telemedicine.</li>
+								<li>Treasurer of the HL7 Peru Association, founding member.</li>
+								<li>Founding member of the IEEE UPCH Student Branch in 2019.</li>
+								<li>Founding member of the Biomedical Engineering Student Association in 2020.
+									as vice president.</li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+
+
+
+				<div class="module-team-three">
+
+					<div class="module-team__wrapper3">
+						<div class="module-team__circle-2">
+							<img src="../es/img/directorio/Cynthia.jpg" alt="">
+						</div>
+						<div class="module-team__copy3">
+							<h3 class="p-md">Cynthia Téllez Gutiérrez
+								<a href="https://www.linkedin.com/in/cynthia-t%C3%A9llez-2a291b17/" target="_blank"
+									class="linkedin-icon">
+									<img src="../es/img/linkedin.png" alt="LinkedIn Icon">
+								</a>
+							</h3>
+							<p class="mb-3">Vocal</p>
+							<ul class="custom-list2">
+								<li>Legal consultant in Personal Data Protection, Law and Internet.
+								</li>
+								<li>Certified Data Protection Expert by the Institute of Audit & IT-Governance. </li>
+								<li>Lawyer from Universidad Nacional Mayor de San Marcos. </li>
+								<li>Master in Legal Security and Computer Security in Digitalized Societies at the University of Lille 2</li>
+								<li>Graduate of the Master's Degree in Information Technology Management from the Universidad Peruana de Ciencias Informáticas.</li>
+								<li>She was a university professor at the UNMSM, at the Graduate School of the University of Lima and others.
+									de Lima and others. Coordinator of the DateaSeguro initiative in Peru. </li>
+								<li>Master's Degree in Business Law at Toulouse 1 University (France).
+									Internship at Estudio de Abogados Écija (Madrid-Spain). </li>
+								<li>Accésit Award 2014 of the XVIII Edition of the Spanish Data Protection Awards
+									Personal Data Protection Awards of the Spanish Agency for the Protection of Personal Data with a group research text.
+									group research. </li>
+								<li> Speaker at various events on personal data protection and law.. </li>
+								<li>Consultant hired to draft the preliminary draft of the Regulations of the Telehealth Framework Law.</li>
+								<li>External legal advisor invited by the Ministry of Justice for the elaboration of the Personal Data Protection Law. </li>
+								<li>She was Head of the Personal Data Protection and Access to Information Division at Iriarte & Asociados. </li>
+								<li>Member of the Civil Law and Civil Procedure Projects Area at Grijley Legal Publishing House. </li>
+
+							</ul>
+						</div>
+					</div>
+
+					<div class="module-team__wrapper3">
+						<div class="module-team__circle-2">
+							<img src="../es/img/directorio/Miguel.jpg" alt="">
+						</div>
+						<div class="module-team__copy3">
+							<h3 class="p-md">Miguel Sebastián Egoavil Ayala
+								<a href="https://www.linkedin.com/in/miguel-s-egoavil-ayala-8286a840/" target="_blank"
+									class="linkedin-icon">
+									<img src="../es/img/linkedin.png" alt="LinkedIn Icon">
+								</a>
+							</h3>
+							<p class="mb-3">Vocal</p>
+							<ul class="custom-list2">
+								<li>Physician-Surgeon and graduate of the Master in Biomedical Informatics in Global Health,
+									both from the Universidad Peruana Cayetano Heredia. </li>
+								<li>More than 10 years of experience in the implementation of Digital Health projects (Telehealth, Interoperability, Artificial Intelligence, among others).
+									(Telehealth, Interoperability, Artificial Intelligence, among others), both at the level of academia
+									academia (research projects), as well as in the private sector. </li>
+
+								<li>Postgraduate studies in Big Data and Machine Learning (UTEC),
+									Health Information Systems (Universidad de Chile) and Project Management (Universidad ESAN).
+									(ESAN University).</li>
+
+								<li>In the private sector, as Medical Director of Medical Innovation & Technology, he implements
+									Telehealth projects for rural areas within the framework of corporate social responsibility.
+									and currently I am Telemedicine Manager of Bupa Global Latin America.
+								</li>
+
+							</ul>
+						</div>
+					</div>
+
+				</div>
+
+
+				<div class="module-team-four">
+
+					<div class="module-team__wrapper3">
+						<div class="module-team__circle-2">
+							<img src="../es/img/directorio/Javier.png" alt="">
+						</div>
+						<div class="module-team__copy3">
+							<h3 class="p-md">Javier Alejandro Santisteban Romero
+								<a href="https://www.linkedin.com/in/javier-santisteban-romero-74463725/"
+									target="_blank" class="linkedin-icon">
+									<img src="../es/img/linkedin.png" alt="LinkedIn Icon">
+								</a>
+							</h3>
+							<p class="mb-3">Vocal</p>
+							<ul class="custom-list2">
+								<li>Systems Engineering Professional with specialization in Project Management and Business Intelligence.
+									Project Management and Business Intelligence. </li>
+								<li>Twenty years of experience in public management in the health sector at the national government level; with a strong background in strategic planning
+									with solid knowledge in strategic planning, process management and social and economic development projects
+									and social and economic development projects, oriented to generate public value.
+								</li>
+								<li>With extensive experience in the formulation and implementation of regulations, design and
+									and management of customer service platforms, strengthening plans, information management and
+									plans, information management and digital transformation. </li>
+								<li>Defined human values and able to work in a team and independently,
+									according to the needs of the organization; lecturer and with publications on social development issues in Peru.
+									on social development issues in Peru. </li>
+
+							</ul>
+						</div>
+					</div>
+
+					<div class="module-team__wrapper3">
+						<div class="module-team__circle-2">
+							<img src="../es/img/directorio/Marcelino.PNG" alt="">
+						</div>
+						<div class="module-team__copy3">
+							<h3 class="p-md">Marcelino Esteban Andía Ticona
+								<a href="https://www.linkedin.com/in/marcelino-and%C3%ADa-0a43a6190/" target="_blank"
+									class="linkedin-icon">
+									<img src="../es/img/linkedin.png" alt="LinkedIn Icon">
+								</a>
+							</h3>
+							<p class="mb-3">Vocal</p>
+							<ul class="custom-list2">
+								<li>Dental Surgeon, Master in Administration, PhD in Education</li>
+								<li>Specialization Diploma in Digital Governance and Management</li>
+								<li>Diploma in Business Process Management with Bizagi</li>
+								<li>Diploma in Health Technologies Management</li>
+								<li>Certificate Scrum Foundations, Scrum Master</li>
+								<li>Member of the Technical Team of the Office of Innovation and Development of the General Office of Information Technologies of the Ministry of Health of Peru.
+									General Office of Information Technologies of the Ministry of Health of Peru.</li>
+								<li>Specialist member of the Technical Committee for Standardization 129 Health Informatics
+									for the National Institute of Quality (INACAL). </li>
+								<li>Undergraduate and Postgraduate University Professor UNMSM, UPSJB</li>
+
+							</ul>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="module-team-five">
+
+					<div class="module-team__wrapper3">
+						<div class="module-team__circle-2">
+							<img src="../es/img/directorio/Jose Luis.jpg" alt="">
+						</div>
+						<div class="module-team__copy3">
+							<h3 class="p-md">Jose Luis Huaman Villar
+								<a href="https://www.linkedin.com/in/jose-luis-huaman-villar-b215a729/" target="_blank"
+									class="linkedin-icon">
+									<img src="../es/img/linkedin.png" alt="LinkedIn Icon">
+								</a>
+							</h3>
+							<p class="mb-3">Vocal</p>
+							<ul class="custom-list2">
+								<li>Systems Engineer with more than 20 years of experience in IT management, governance and digital transformation, enterprise architecture
+									governance and digital transformation, enterprise architecture,
+									service-oriented architecture, project management, process management,
+									cybersecurity, information security, cloud computing technologies,
+									disruptive technologies with blockchain, technologies with hyperconverged computing.
+									computing. </li>
+								<li>Implementer of sectorial platforms of interoperability such as the
+									Platform for Interoperability in Health - PIDSALUD (supporting international semantic and syntactic
+									semantic and syntactic standards), Platform for the Electronic Health Record Repository - RENHICE
+									Electronic Health Record Repository - RENHICE, Platform for digital and electronic signature,
+									Platform for the Registry of Affiliates to the Universal Health Insurance - RAUS,
+									Platform for the Health Accreditation Model, among others, using both OnPremise and Cloud environments.
+									environments both OnPremise and Public and Private Cloud; in the same way, the use of interoperability
+									interoperability standards such as X12N, HL7, HL7 FHIR.</li>
+								<li>Member of the HL7 Peru Chapter, DAMA Peru Chapter training team. </li>
+
+							</ul>
+						</div>
+					</div>
+
+					<div class="module-team__wrapper3">
+						<div class="module-team__circle-2">
+							<img src="../es/img/directorio/Henry.jpeg" alt="">
+						</div>
+						<div class="module-team__copy3">
+							<h3 class="p-md"> Jhon Henry García Ruiz
+								<a href="https://www.linkedin.com/in/h3nrygr/" target="_blank" class="linkedin-icon">
+									<img src="../es/img/linkedin.png" alt="LinkedIn Icon">
+								</a>
+							</h3>
+							<p class="mb-3">Vocal</p>
+							<ul class="custom-list2">
+								<li>Consultant and entrepreneur with more than 12 years of experience in the private and public sector.
+									public sector. Specialist in Digital Health (Electronic Health Record / TeleHealth / Interoperability - HL7).
+									Interoperability - HL7); by profession Systems and Computer Engineer with
+									Master in Business Administration - UTP and Master in Software Engineering - UNMSM.
+									Engineering - UNMSM. </li>
+
+								<li>Executive and General Manager (2016-2019) of Telehealth and Information Technology.
+									technologies. I contributed to the elaboration of the basic regulatory framework for the processes
+									National Registry of Electronic Health Records and Telehealth (Legislative Decrees N° 1306 - and
+									(Legislative Decrees N° 1306 - and N° 1303 - respectively) and interoperability,
+									among others. </li>
+
+								<li>He collaborates with non-profit organizations such as the Lima Departmental Council of the Peruvian Association of Engineers
+									of the Peruvian College of Engineers - as Expert Member - Health Technologies Commission.
+									for Health. I am a member of the HL7 Peru Association and an Associate of the Peruvian
+									Peruvian Association of Free Software APESOL. </li>
+
+							</ul>
+						</div>
+					</div>
+
+				</div>
+
+
+
+
+
+
+
+
+
+
+			</div>
+
+		</section>
+
+
+
+
+
+
+
+
+
+
+	</main>
+
+
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+
+
+
+
+				<div class="footer-col">
+					<h4>About HL7 Peru</h4>
+					<ul>
+						<li><a href="../en/nosotros.html">About us</a></li>
+
+						<li><a href="../en/directorio.html">Management team</a></li>
+						<li><a href="../en/aliados.html">Strategic allies</a></li>
+						<li><a href="../en/membresias.html">Membership program</a></li>
+					</ul>
+				</div>
+				<div class="footer-col">
+					<h4>Our work</h4>
+					<ul>
+						<li><a href="../en/blog.html">Blog</a></li>
+						<li><a href="../en/eventos.html">Events</a></li>
+						<li><a href="../en/webiners.html">Webiners</a></li>
+
+					</ul>
+				</div>
+				<div class="footer-col">
+					<h4>Languages</h4>
+					<ul>
+						<li><a href="../es/index.html">Spanish</a></li>
+						<li><a href="../en/index_en.html">Engish</a></li>
+
+					</ul>
+				</div>
+				<div class="footer-col">
+					<h4>Follow us</h4>
+
+					<div class="social-links">
+						<a href="https://www.facebook.com/capitulohl7peru" target="_blank" rel="noopener noreferrer"><i
+								class="fab fa-facebook-f"></i></a>
+						<a href="https://twitter.com/HL7Peru" target="_blank" rel="noopener noreferrer"><i
+								class="fab fa-twitter"></i></a>
+						<a href="https://www.instagram.com/hl7peru/" target="_blank" rel="noopener noreferrer"> <i
+								class="fab fa-instagram"></i></a>
+						<a href="https://www.linkedin.com/company/capitulo-hl7-peru/" target="_blank"
+							rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+
+
+					</div>
+				</div>
+
+				<div class="footer-col2">
+
+					<h4>Contact us</h4>
+					<ul>
+						<li><a> <i class="fas fa-map-marker-alt"></i> </a></li>
+						<li><a>Calle Simón Condori 286</a></li>
+						<li><a>Pueblo Libre</a></li>
+						<li><a>Lima, Perú</a></li> <br>
+						<li><a href="#"><i class="fas fa-phone"></i> (+51) 956194180 </a></li>
+						<br>
+						<li><a href="../en/contacto.html"><i class="fas fa-envelope"></i> presidencia@hl7peru.org</a>
+						</li>
+					</ul>
+
+				</div>
+
+			</div>
+
+			<p class="footer-text">© 2023 HL7 Perú <br> Website developed by <a
+					href="https://www.linkedin.com/in/stypcanto/" target="_blank" rel="noopener noreferrer">SBRCR </a>
+			</p>
+
+		</div>
+	</footer>
+
+
+
+
+
+
+
+</body>
+
+</html>
